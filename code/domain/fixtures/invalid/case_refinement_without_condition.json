@@ -1,0 +1,175 @@
+{
+  "case_id": "fixture-entrevista",
+  "extraction": {
+    "actors": [
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-9e31855f3c8b8ca8",
+            "quote": "Coordenadora do laboratório",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "A1",
+        "kind": "stakeholder",
+        "name": "Coordenadora do laboratório"
+      },
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-f7faa2ea1130ac73",
+            "quote": "Técnico",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "A2",
+        "kind": "user_role",
+        "name": "Técnico"
+      }
+    ],
+    "components": [],
+    "entities": [
+      {
+        "entity_type": "evento",
+        "evidence": [
+          {
+            "chunk_id": "chk-f7faa2ea1130ac73",
+            "quote": "sai de calibração",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "E1",
+        "name": "calibração"
+      }
+    ],
+    "relations": [
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-9e31855f3c8b8ca8",
+            "quote": "o sistema tem de impedir duas reservas no mesmo horário",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "source_key": "R1",
+        "target_key": "A1",
+        "type": "requested_by"
+      },
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-f7faa2ea1130ac73",
+            "quote": "O sistema deve enviar um aviso ao responsável em até cinco minutos",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "source_key": "R2",
+        "target_key": "A2",
+        "type": "requested_by"
+      },
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-202c7f98847e276d",
+            "quote": "só a coordenação pode cancelar reserva de outra pessoa",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "origin": "system_inference",
+        "rationale": "Cancelar pressupõe a existência da reserva.",
+        "source_key": "R4",
+        "target_key": "R1",
+        "type": "depends_on"
+      }
+    ],
+    "requirements": [
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-9e31855f3c8b8ca8",
+            "quote": "o sistema tem de impedir duas reservas no mesmo horário",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "R1",
+        "priority": "must",
+        "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+        "type": "functional",
+        "verification_method": "test"
+      },
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-f7faa2ea1130ac73",
+            "quote": "O sistema deve enviar um aviso ao responsável em até cinco minutos",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "R2",
+        "priority": "should",
+        "quality_attributes": [
+          "performance"
+        ],
+        "quantitative_value": "5 min",
+        "statement": "O sistema deve avisar o responsável em até cinco minutos após o vencimento da calibração.",
+        "type": "non_functional",
+        "verification_method": "test"
+      },
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-f7faa2ea1130ac73",
+            "quote": "A consulta da agenda precisa ser rápida",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "R3",
+        "priority": "could",
+        "quality_attributes": [
+          "performance"
+        ],
+        "review_flags": [
+          "quantitative_value_pending"
+        ],
+        "statement": "A consulta da agenda deve ter tempo de resposta adequado.",
+        "type": "non_functional",
+        "verification_method": "test"
+      },
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-202c7f98847e276d",
+            "quote": "só a coordenação pode cancelar reserva de outra pessoa",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "R4",
+        "priority": "must",
+        "quality_attributes": [
+          "security"
+        ],
+        "statement": "Somente a coordenação pode cancelar reservas de outros usuários.",
+        "type": "functional",
+        "verification_method": "demonstration"
+      },
+      {
+        "evidence": [
+          {
+            "chunk_id": "chk-202c7f98847e276d",
+            "quote": "Os dados de uso ficam guardados por dois anos para auditoria",
+            "source_id": "src-3f478d516d9d807d"
+          }
+        ],
+        "key": "R5",
+        "priority": "should",
+        "statement": "O sistema deve reter os dados de uso por dois anos.",
+        "type": "constraint",
+        "verification_method": "inspection"
+      }
+    ]
+  },
+  "run_index": 0,
+  "stage": "refinement",
+  "status": "ok",
+  "target_key": "R1"
+}

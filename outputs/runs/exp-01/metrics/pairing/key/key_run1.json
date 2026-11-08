@@ -1,0 +1,955 @@
+{
+ "format": "reqkg-pairing-key/1",
+ "items": {
+  "3C6Q": {
+   "candidates": [
+    "a06-R01",
+    "a06-R02",
+    "a06-R03"
+   ],
+   "case": "src-6a0825aed64fa5f0",
+   "members": [
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "LLM-only",
+     "key": "c0-R2"
+    },
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "REQKG-grounded",
+     "key": "c0-R2"
+    }
+   ]
+  },
+  "4W44": {
+   "candidates": [
+    "a04-R01",
+    "a04-R02",
+    "a04-R03",
+    "a04-R04",
+    "a04-R05",
+    "a04-R06",
+    "a04-R07"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c0-R6"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c0-R6"
+    }
+   ]
+  },
+  "6CRF": {
+   "candidates": [
+    "a02-R06",
+    "a02-R07",
+    "a02-R08",
+    "a02-R09"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c1-R1"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c1-R1"
+    }
+   ]
+  },
+  "6PLJ": {
+   "candidates": [
+    "a05-R01",
+    "a05-R02",
+    "a05-R03",
+    "a05-R04",
+    "a05-R05",
+    "a05-R06",
+    "a05-R07"
+   ],
+   "case": "src-d59cd2b67e5a48a4",
+   "members": [
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "LLM-only",
+     "key": "c0-R3"
+    },
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "REQKG-grounded",
+     "key": "c0-R3"
+    }
+   ]
+  },
+  "7VYE": {
+   "candidates": [
+    "a04-R08",
+    "a04-R09"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c1-R2"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c1-R2"
+    }
+   ]
+  },
+  "9ACV": {
+   "candidates": [
+    "a04-R01",
+    "a04-R02",
+    "a04-R03",
+    "a04-R04",
+    "a04-R05",
+    "a04-R06",
+    "a04-R07"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c0-R2"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c0-R2"
+    }
+   ]
+  },
+  "9LXH": {
+   "candidates": [
+    "a06-R04",
+    "a06-R05",
+    "a06-R06",
+    "a06-R07",
+    "a06-R08",
+    "a06-R09"
+   ],
+   "case": "src-6a0825aed64fa5f0",
+   "members": [
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "LLM-only",
+     "key": "c1-R1"
+    },
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "REQKG-grounded",
+     "key": "c1-R1"
+    }
+   ]
+  },
+  "9UKL": {
+   "candidates": [
+    "a02-R06",
+    "a02-R07",
+    "a02-R08",
+    "a02-R09"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c1-R4"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c1-R4"
+    }
+   ]
+  },
+  "A69M": {
+   "candidates": [
+    "a04-R01",
+    "a04-R02",
+    "a04-R03",
+    "a04-R04",
+    "a04-R05",
+    "a04-R06",
+    "a04-R07"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c0-R5"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c0-R5"
+    }
+   ]
+  },
+  "CFXR": {
+   "candidates": [
+    "a04-R08",
+    "a04-R09"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c1-R1"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c1-R1"
+    }
+   ]
+  },
+  "CUT4": {
+   "candidates": [
+    "a04-R01",
+    "a04-R02",
+    "a04-R03",
+    "a04-R04",
+    "a04-R05",
+    "a04-R06",
+    "a04-R07"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c0-R3"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c0-R3"
+    }
+   ]
+  },
+  "DQXQ": {
+   "candidates": [
+    "a06-R01",
+    "a06-R02",
+    "a06-R03"
+   ],
+   "case": "src-6a0825aed64fa5f0",
+   "members": [
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "LLM-only",
+     "key": "c0-R1"
+    },
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "REQKG-grounded",
+     "key": "c0-R1"
+    }
+   ]
+  },
+  "EM9F": {
+   "candidates": [
+    "a02-R01",
+    "a02-R02",
+    "a02-R03",
+    "a02-R04",
+    "a02-R05"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c0-R3"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c0-R3"
+    }
+   ]
+  },
+  "FNP7": {
+   "candidates": [
+    "a05-R08",
+    "a05-R09"
+   ],
+   "case": "src-d59cd2b67e5a48a4",
+   "members": [
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "LLM-only",
+     "key": "c1-R2"
+    },
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "REQKG-grounded",
+     "key": "c1-R2"
+    }
+   ]
+  },
+  "HQPP": {
+   "candidates": [
+    "a04-R01",
+    "a04-R02",
+    "a04-R03",
+    "a04-R04",
+    "a04-R05",
+    "a04-R06",
+    "a04-R07"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c0-R4"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c0-R4"
+    }
+   ]
+  },
+  "J4PT": {
+   "candidates": [
+    "a05-R01",
+    "a05-R02",
+    "a05-R03",
+    "a05-R04",
+    "a05-R05",
+    "a05-R06",
+    "a05-R07"
+   ],
+   "case": "src-d59cd2b67e5a48a4",
+   "members": [
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "LLM-only",
+     "key": "c0-R4"
+    },
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "REQKG-grounded",
+     "key": "c0-R4"
+    }
+   ]
+  },
+  "K679": {
+   "candidates": [
+    "a01-R01",
+    "a01-R02"
+   ],
+   "case": "src-9475d9940ecbf40f",
+   "members": [
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "LLM-only",
+     "key": "c0-R3"
+    },
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "REQKG-grounded",
+     "key": "c0-R3"
+    }
+   ]
+  },
+  "KUAL": {
+   "candidates": [
+    "a06-R04",
+    "a06-R05",
+    "a06-R06",
+    "a06-R07",
+    "a06-R08",
+    "a06-R09"
+   ],
+   "case": "src-6a0825aed64fa5f0",
+   "members": [
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "LLM-only",
+     "key": "c1-R3"
+    },
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "REQKG-grounded",
+     "key": "c1-R3"
+    }
+   ]
+  },
+  "KV79": {
+   "candidates": [
+    "a02-R06",
+    "a02-R07",
+    "a02-R08",
+    "a02-R09"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c1-R2"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c1-R2"
+    }
+   ]
+  },
+  "LHXQ": {
+   "candidates": [
+    "a02-R01",
+    "a02-R02",
+    "a02-R03",
+    "a02-R04",
+    "a02-R05"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c0-R2"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c0-R2"
+    }
+   ]
+  },
+  "LUVV": {
+   "candidates": [
+    "a06-R04",
+    "a06-R05",
+    "a06-R06",
+    "a06-R07",
+    "a06-R08",
+    "a06-R09"
+   ],
+   "case": "src-6a0825aed64fa5f0",
+   "members": [
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "LLM-only",
+     "key": "c1-R2"
+    },
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "REQKG-grounded",
+     "key": "c1-R2"
+    }
+   ]
+  },
+  "M6FQ": {
+   "candidates": [
+    "a03-R01",
+    "a03-R02",
+    "a03-R03",
+    "a03-R04",
+    "a03-R05",
+    "a03-R06"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c0-R4"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c0-R4"
+    }
+   ]
+  },
+  "MJ7Q": {
+   "candidates": [
+    "a02-R06",
+    "a02-R07",
+    "a02-R08",
+    "a02-R09"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c1-R3"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c1-R3"
+    }
+   ]
+  },
+  "MMFU": {
+   "candidates": [
+    "a04-R01",
+    "a04-R02",
+    "a04-R03",
+    "a04-R04",
+    "a04-R05",
+    "a04-R06",
+    "a04-R07"
+   ],
+   "case": "src-213683c0ce9c1b28",
+   "members": [
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "LLM-only",
+     "key": "c0-R1"
+    },
+    {
+     "case": "src-213683c0ce9c1b28",
+     "condition": "REQKG-grounded",
+     "key": "c0-R1"
+    }
+   ]
+  },
+  "MYXJ": {
+   "candidates": [
+    "a01-R03",
+    "a01-R04",
+    "a01-R05",
+    "a01-R06",
+    "a01-R07",
+    "a01-R08",
+    "a01-R09"
+   ],
+   "case": "src-9475d9940ecbf40f",
+   "members": [
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "LLM-only",
+     "key": "c1-R3"
+    },
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "REQKG-grounded",
+     "key": "c1-R3"
+    }
+   ]
+  },
+  "NA3H": {
+   "candidates": [
+    "a03-R07",
+    "a03-R08",
+    "a03-R09"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c1-R1"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c1-R1"
+    }
+   ]
+  },
+  "NJHN": {
+   "candidates": [
+    "a03-R01",
+    "a03-R02",
+    "a03-R03",
+    "a03-R04",
+    "a03-R05",
+    "a03-R06"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c0-R2"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c0-R2"
+    }
+   ]
+  },
+  "NM44": {
+   "candidates": [
+    "a05-R01",
+    "a05-R02",
+    "a05-R03",
+    "a05-R04",
+    "a05-R05",
+    "a05-R06",
+    "a05-R07"
+   ],
+   "case": "src-d59cd2b67e5a48a4",
+   "members": [
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "LLM-only",
+     "key": "c0-R2"
+    },
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "REQKG-grounded",
+     "key": "c0-R2"
+    }
+   ]
+  },
+  "PKJP": {
+   "candidates": [
+    "a02-R01",
+    "a02-R02",
+    "a02-R03",
+    "a02-R04",
+    "a02-R05"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c0-R1"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c0-R1"
+    }
+   ]
+  },
+  "QKYA": {
+   "candidates": [
+    "a01-R01",
+    "a01-R02"
+   ],
+   "case": "src-9475d9940ecbf40f",
+   "members": [
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "LLM-only",
+     "key": "c0-R2"
+    },
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "REQKG-grounded",
+     "key": "c0-R2"
+    }
+   ]
+  },
+  "RHKF": {
+   "candidates": [
+    "a03-R01",
+    "a03-R02",
+    "a03-R03",
+    "a03-R04",
+    "a03-R05",
+    "a03-R06"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c0-R1"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c0-R1"
+    }
+   ]
+  },
+  "RPC7": {
+   "candidates": [
+    "a05-R01",
+    "a05-R02",
+    "a05-R03",
+    "a05-R04",
+    "a05-R05",
+    "a05-R06",
+    "a05-R07"
+   ],
+   "case": "src-d59cd2b67e5a48a4",
+   "members": [
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "LLM-only",
+     "key": "c0-R1"
+    },
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "REQKG-grounded",
+     "key": "c0-R1"
+    }
+   ]
+  },
+  "RPLH": {
+   "candidates": [
+    "a03-R07",
+    "a03-R08",
+    "a03-R09"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c1-R3"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c1-R3"
+    }
+   ]
+  },
+  "TQXU": {
+   "candidates": [
+    "a03-R07",
+    "a03-R08",
+    "a03-R09"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c1-R2"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c1-R2"
+    }
+   ]
+  },
+  "U3KU": {
+   "candidates": [
+    "a03-R01",
+    "a03-R02",
+    "a03-R03",
+    "a03-R04",
+    "a03-R05",
+    "a03-R06"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c0-R3"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c0-R3"
+    }
+   ]
+  },
+  "U736": {
+   "candidates": [
+    "a06-R04",
+    "a06-R05",
+    "a06-R06",
+    "a06-R07",
+    "a06-R08",
+    "a06-R09"
+   ],
+   "case": "src-6a0825aed64fa5f0",
+   "members": [
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "LLM-only",
+     "key": "c1-R4"
+    },
+    {
+     "case": "src-6a0825aed64fa5f0",
+     "condition": "REQKG-grounded",
+     "key": "c1-R4"
+    }
+   ]
+  },
+  "VELC": {
+   "candidates": [
+    "a05-R08",
+    "a05-R09"
+   ],
+   "case": "src-d59cd2b67e5a48a4",
+   "members": [
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "LLM-only",
+     "key": "c1-R1"
+    },
+    {
+     "case": "src-d59cd2b67e5a48a4",
+     "condition": "REQKG-grounded",
+     "key": "c1-R1"
+    }
+   ]
+  },
+  "VHD9": {
+   "candidates": [
+    "a01-R03",
+    "a01-R04",
+    "a01-R05",
+    "a01-R06",
+    "a01-R07",
+    "a01-R08",
+    "a01-R09"
+   ],
+   "case": "src-9475d9940ecbf40f",
+   "members": [
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "LLM-only",
+     "key": "c1-R2"
+    },
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "REQKG-grounded",
+     "key": "c1-R2"
+    }
+   ]
+  },
+  "VJ7Q": {
+   "candidates": [
+    "a03-R01",
+    "a03-R02",
+    "a03-R03",
+    "a03-R04",
+    "a03-R05",
+    "a03-R06"
+   ],
+   "case": "src-11ccbd4ba03f273d",
+   "members": [
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "LLM-only",
+     "key": "c0-R5"
+    },
+    {
+     "case": "src-11ccbd4ba03f273d",
+     "condition": "REQKG-grounded",
+     "key": "c0-R5"
+    }
+   ]
+  },
+  "VNN4": {
+   "candidates": [
+    "a01-R01",
+    "a01-R02"
+   ],
+   "case": "src-9475d9940ecbf40f",
+   "members": [
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "LLM-only",
+     "key": "c0-R1"
+    },
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "REQKG-grounded",
+     "key": "c0-R1"
+    }
+   ]
+  },
+  "VTR7": {
+   "candidates": [
+    "a01-R03",
+    "a01-R04",
+    "a01-R05",
+    "a01-R06",
+    "a01-R07",
+    "a01-R08",
+    "a01-R09"
+   ],
+   "case": "src-9475d9940ecbf40f",
+   "members": [
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "LLM-only",
+     "key": "c1-R1"
+    },
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "REQKG-grounded",
+     "key": "c1-R1"
+    }
+   ]
+  },
+  "VUAP": {
+   "candidates": [
+    "a01-R03",
+    "a01-R04",
+    "a01-R05",
+    "a01-R06",
+    "a01-R07",
+    "a01-R08",
+    "a01-R09"
+   ],
+   "case": "src-9475d9940ecbf40f",
+   "members": [
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "LLM-only",
+     "key": "c1-R4"
+    },
+    {
+     "case": "src-9475d9940ecbf40f",
+     "condition": "REQKG-grounded",
+     "key": "c1-R4"
+    }
+   ]
+  },
+  "YHWV": {
+   "candidates": [
+    "a02-R01",
+    "a02-R02",
+    "a02-R03",
+    "a02-R04",
+    "a02-R05"
+   ],
+   "case": "src-f43b6bff589981b2",
+   "members": [
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "LLM-only",
+     "key": "c0-R4"
+    },
+    {
+     "case": "src-f43b6bff589981b2",
+     "condition": "REQKG-grounded",
+     "key": "c0-R4"
+    }
+   ]
+  }
+ },
+ "run_id": "exp-01",
+ "run_index": 1
+}

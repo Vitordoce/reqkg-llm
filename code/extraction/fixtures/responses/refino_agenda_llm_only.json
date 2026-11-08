@@ -1,0 +1,24 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste, não veio de modelo. Refinamento de c1-R2 com o contexto da condição LLM-only (chunks da chamada c1). Respeita a regra de não inventar: prioridade e método continuam nulos, e o valor quantitativo continua pendente. É aceito.",
+  "response": {
+    "target_key": "c1-R2",
+    "revised": {
+      "key": "c1-R2",
+      "statement": "O sistema deve responder rapidamente à consulta da agenda.",
+      "type": "non_functional",
+      "priority": null,
+      "verification_method": null,
+      "quality_attributes": ["performance"],
+      "quantitative_value": null,
+      "review_flags": ["quantitative_value_pending"],
+      "confidence": 0.7,
+      "rationale": null,
+      "origin": "extracted_fact",
+      "evidence": [
+        {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-f7faa2ea1130ac73", "quote": "A consulta da agenda precisa ser rápida"}
+      ]
+    },
+    "used_context_ids": ["chk-f7faa2ea1130ac73"]
+  }
+}

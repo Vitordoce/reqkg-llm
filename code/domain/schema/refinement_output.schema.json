@@ -1,0 +1,242 @@
+{
+  "$defs": {
+    "CitedEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "chunk_id": {
+          "minLength": 1,
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "quote": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quote"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "chunk_id"
+      ],
+      "title": "CitedEvidence",
+      "type": "object"
+    },
+    "Priority": {
+      "enum": [
+        "must",
+        "should",
+        "could",
+        "wont"
+      ],
+      "title": "Priority",
+      "type": "string"
+    },
+    "QualityCategory": {
+      "description": "Seis características da ISO/IEC 25010 fixadas no TG-1, com os nomes da edição de 2011.\n\nSecurity é proteção de informação e acesso. Safety, criada em 2023, não faz parte do conjunto.",
+      "enum": [
+        "performance",
+        "security",
+        "usability",
+        "reliability",
+        "maintainability",
+        "portability"
+      ],
+      "title": "QualityCategory",
+      "type": "string"
+    },
+    "RequirementCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/CitedEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "key": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,31}$",
+          "title": "Key",
+          "type": "string"
+        },
+        "origin": {
+          "default": "extracted_fact",
+          "enum": [
+            "extracted_fact",
+            "system_inference"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "priority": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Priority"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "quality_attributes": {
+          "items": {
+            "$ref": "#/$defs/QualityCategory"
+          },
+          "title": "Quality Attributes",
+          "type": "array"
+        },
+        "quantitative_value": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantitative Value"
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rationale"
+        },
+        "review_flags": {
+          "items": {
+            "$ref": "#/$defs/ReviewFlag"
+          },
+          "title": "Review Flags",
+          "type": "array"
+        },
+        "statement": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Statement",
+          "type": "string"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RequirementType"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "verification_method": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/VerificationMethod"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "key",
+        "statement"
+      ],
+      "title": "RequirementCandidate",
+      "type": "object"
+    },
+    "RequirementType": {
+      "enum": [
+        "functional",
+        "non_functional",
+        "constraint"
+      ],
+      "title": "RequirementType",
+      "type": "string"
+    },
+    "ReviewFlag": {
+      "enum": [
+        "low_confidence",
+        "ambiguous_type",
+        "quantitative_value_pending"
+      ],
+      "title": "ReviewFlag",
+      "type": "string"
+    },
+    "VerificationMethod": {
+      "enum": [
+        "inspection",
+        "analysis",
+        "demonstration",
+        "test"
+      ],
+      "title": "VerificationMethod",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Resposta da única passagem de refinamento de um candidato, endereçado pela chave.",
+  "properties": {
+    "revised": {
+      "$ref": "#/$defs/RequirementCandidate"
+    },
+    "target_key": {
+      "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,31}$",
+      "title": "Target Key",
+      "type": "string"
+    },
+    "used_context_ids": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Used Context Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "target_key",
+    "revised"
+  ],
+  "title": "RefinementOutput",
+  "type": "object"
+}

@@ -1,0 +1,63 @@
+{
+  "$defs": {
+    "PromiseLabel": {
+      "description": "Rótulos do PROMISE NFR, usados sem correspondência com a ISO/IEC 25010.",
+      "enum": [
+        "F",
+        "A",
+        "FT",
+        "L",
+        "LF",
+        "MN",
+        "O",
+        "PE",
+        "PO",
+        "SC",
+        "SE",
+        "US"
+      ],
+      "title": "PromiseLabel",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "description": "Classificação de um item do PROMISE NFR, na primeira chamada e no refinamento.",
+  "properties": {
+    "label": {
+      "$ref": "#/$defs/PromiseLabel"
+    },
+    "promise_id": {
+      "pattern": "^PROMISE-NFR-\\d{4}$",
+      "title": "Promise Id",
+      "type": "string"
+    },
+    "rationale": {
+      "anyOf": [
+        {
+          "maxLength": 500,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Rationale"
+    },
+    "used_context_ids": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "title": "Used Context Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "promise_id",
+    "label"
+  ],
+  "title": "ClassificationOutput",
+  "type": "object"
+}

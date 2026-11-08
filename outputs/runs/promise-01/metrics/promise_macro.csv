@@ -1,0 +1,7 @@
+run_index,variant,task,items,invalid,macro_labels,macro_precision,macro_recall,macro_f1
+0,initial,binary,625,0,F NF,0.846661,0.857552,0.839375
+0,initial,category,370,0,A FT L LF MN O PE SC SE US,0.849694,0.668928,0.732869
+0,LLM-only,binary,625,0,F NF,0.872319,0.884844,0.873660
+0,LLM-only,category,370,0,A FT L LF MN O PE SC SE US,0.803147,0.693821,0.728380
+0,REQKG-grounded,binary,625,0,F NF,0.870928,0.883492,0.872086
+0,REQKG-grounded,category,370,0,A FT L LF MN O PE SC SE US,0.805103,0.693821,0.729045

@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste do executor, não veio de modelo. Extração da descrição sintética com uma relação para a chave R9, que não existe. O contrato recusa a resposta inteira, e o caso entra como invalid_output, com zero requisito gerado nas duas condições.",
+  "response": {
+    "requirements": [
+      {
+        "key": "R1",
+        "statement": "O sistema deve impedir que duas pessoas reservem o mesmo equipamento no mesmo horário.",
+        "type": "functional",
+        "evidence": [
+          {"source_id": "src-71d5fe87d6dfb68a", "chunk_id": "chk-dcc453cd241a756d", "quote": "duas pessoas conseguem escrever na mesma célula ao mesmo tempo"}
+        ]
+      }
+    ],
+    "actors": [],
+    "components": [],
+    "entities": [],
+    "relations": [
+      {"type": "depends_on", "source_key": "R1", "target_key": "R9",
+       "evidence": [{"source_id": "src-71d5fe87d6dfb68a", "chunk_id": "chk-dcc453cd241a756d", "quote": "Não há trava de edição"}]}
+    ]
+  }
+}

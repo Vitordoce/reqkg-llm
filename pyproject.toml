@@ -1,0 +1,10 @@
+[project]
+name = "reqkg-llm"
+version = "0.1.0"
+description = "Protótipo do ReqKG-LLM: LLM e knowledge graph para engenharia de requisitos."
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["code"]
+testpaths = ["code"]
+addopts = "-q"

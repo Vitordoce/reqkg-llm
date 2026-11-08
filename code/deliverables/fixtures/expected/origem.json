@@ -1,0 +1,47 @@
+{
+  "artifacts": {
+    "instancia_reqkg.json": "8057148014016d56f49ea8343595e3bb72f756c12483ebfeeed10cdc307f3a78",
+    "instancia_resumo.md": "d12d03ea5765895416b159e3a8bdd0ac3099524849ba37d30523a863be0e87e7",
+    "matriz_proveniencia.csv": "24171dcfdbfc559391af26e419b61a7b914d70bc948ebb9e54850647d2d7d856",
+    "matriz_proveniencia.md": "172eeca68d0920f73d127f12d5fcfd4c7dbd98b3588f1773abee7d1e533bd456",
+    "relatorio_lacunas.md": "30dbaec90aee33c066b6f203918ec17bf871ea29eabe4ac3dc44e34aa5a709d5",
+    "srs.md": "678298c451fd1d0dbf7356e32b46e33d03463520fc9b0f0d08197d990738e15a"
+  },
+  "command": "PYTHONPATH=code .venv/bin/python -m deliverables sintetico-entrevista --condition REQKG-grounded --run-index 0 --name fixture-sintetico --runs-dir code/deliverables/fixtures/runs --config code/deliverables/fixtures/experiment.toml",
+  "inputs": {
+    "case_results": {
+      "path": "code/deliverables/fixtures/runs/sintetico-entrevista/case_results.jsonl",
+      "sha256": "b74be9181c437a923b21840eb8175ae8d2673d35695d1ccb6331ade1b03ac676"
+    },
+    "config": {
+      "path": "code/deliverables/fixtures/experiment.toml",
+      "sha256": "55a6bc3ea88f82f06dba7bc42ab4f1d1f9144426fbf23e530d1dc8489954b5bc"
+    },
+    "finals": {
+      "path": "code/deliverables/fixtures/runs/sintetico-entrevista/finals.jsonl",
+      "sha256": "1947cd3370c7e148fa5c5623da653f6d3cd971762da9b209c0df196317237a49"
+    },
+    "ingestion:data/processed/ingestion/fixture.json": {
+      "path": "data/processed/ingestion/fixture.json",
+      "sha256": "49756503282cf362a9f61a496f0fe29b6ea8e69dfa1ecf71f822b801cbe44a7f"
+    },
+    "manifest": {
+      "path": "code/deliverables/fixtures/runs/sintetico-entrevista/manifest.json",
+      "sha256": "8f0b9e91174926d3a6ce459e332de65f9621317508314bfcc6e10d6cf5baedab"
+    },
+    "rejections": {
+      "path": "code/deliverables/fixtures/runs/sintetico-entrevista/rejections.jsonl",
+      "sha256": "b82cf382979ae3165563995a819e1f2d01e7ecd48529689c17365c34e4b6304a"
+    }
+  },
+  "selection": {
+    "cases": [
+      "src-339ed9b9a545ccbc",
+      "src-3f478d516d9d807d",
+      "src-71d5fe87d6dfb68a"
+    ],
+    "condition": "REQKG-grounded",
+    "run_id": "sintetico-entrevista",
+    "run_index": 0
+  }
+}

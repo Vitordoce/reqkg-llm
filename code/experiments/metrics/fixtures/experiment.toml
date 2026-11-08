@@ -1,0 +1,49 @@
+# Configuração das corridas sintéticas dos testes de métricas. Não é a configuração do experimento.
+# bertscore_model fica vazio de propósito: os testes conferem que o BERTScore é recusado assim.
+
+schema_version = "2"
+rules_version = "3"
+conditions = ["LLM-only", "REQKG-grounded"]
+metrics = [
+  "precision",
+  "recall",
+  "f1",
+  "bertscore_f1",
+  "completeness_ratio",
+  "provenance_coverage",
+  "unsupported_claim_rate",
+  "rule_violation_rate",
+]
+
+[model]
+provider = "anthropic"
+model_id = ""
+temperature = 0.0
+max_tokens = 4096
+
+[chunking]
+strategy = "paragraph"
+size_chars = 1500
+overlap_chars = 0
+
+[extraction]
+chunks_per_call = 2
+
+[retrieval]
+mode = "local"
+max_items = 30
+max_hops = 2
+
+[refinement]
+max_calls = 1
+
+[review]
+confidence_threshold = 0.6
+
+[evaluation]
+bertscore_model = ""
+seed = 20261010
+
+[repetitions]
+structural_sample = 3
+promise = 1

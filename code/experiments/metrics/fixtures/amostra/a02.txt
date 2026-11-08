@@ -1,0 +1,7 @@
+Artefato sintético de teste das métricas. Não descreve sistema nem pessoa real.
+
+Ata da reunião de equipe. Participantes: gerente, técnica e auditor.
+
+Decisão: os registros de semeadura devem ser guardados por dois anos.
+
+Pendência: exportar relatório em planilha fica para a segunda versão. O gerente repetiu: quero um alerta quando a umidade passar do limite.

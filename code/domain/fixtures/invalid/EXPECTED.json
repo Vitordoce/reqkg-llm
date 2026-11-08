@@ -1,0 +1,157 @@
+{
+  "case_extraction_with_condition.json": {
+    "expected_loc": "condition",
+    "many": false,
+    "model": "CaseResult"
+  },
+  "case_extraction_with_target.json": {
+    "expected_loc": "target_key",
+    "many": false,
+    "model": "CaseResult"
+  },
+  "case_failed_with_output.json": {
+    "expected_loc": "status",
+    "many": false,
+    "model": "CaseResult"
+  },
+  "case_ok_without_output.json": {
+    "expected_loc": "status",
+    "many": false,
+    "model": "CaseResult"
+  },
+  "case_refinement_without_condition.json": {
+    "expected_loc": "condition",
+    "many": false,
+    "model": "CaseResult"
+  },
+  "case_refinement_without_target.json": {
+    "expected_loc": "target_key",
+    "many": false,
+    "model": "CaseResult"
+  },
+  "chunk_hash_mismatch.json": {
+    "expected_loc": "sha256",
+    "many": true,
+    "model": "SourceChunk"
+  },
+  "classification_unknown_label.json": {
+    "expected_loc": "label",
+    "many": false,
+    "model": "ClassificationOutput"
+  },
+  "context_item_without_chunk.json": {
+    "expected_loc": "items.0.chunk_id",
+    "many": false,
+    "model": "RetrievedContext"
+  },
+  "context_over_limit.json": {
+    "expected_loc": "items",
+    "many": false,
+    "model": "RetrievedContext"
+  },
+  "context_unordered.json": {
+    "expected_loc": "items",
+    "many": false,
+    "model": "RetrievedContext"
+  },
+  "context_without_strategy.json": {
+    "expected_loc": "strategy",
+    "many": false,
+    "model": "RetrievedContext"
+  },
+  "decision_without_note.json": {
+    "expected_loc": "note",
+    "many": false,
+    "model": "Requirement"
+  },
+  "document_id_not_from_path.json": {
+    "expected_loc": "source_id",
+    "many": false,
+    "model": "SourceDocument"
+  },
+  "document_path_not_canonical.json": {
+    "expected_loc": "path",
+    "many": false,
+    "model": "SourceDocument"
+  },
+  "extraction_dangling_key.json": {
+    "expected_loc": "relations.0.target_key",
+    "many": false,
+    "model": "ExtractionOutput"
+  },
+  "extraction_derived_from_by_model.json": {
+    "expected_loc": "relations.0.type",
+    "many": false,
+    "model": "ExtractionOutput"
+  },
+  "extraction_duplicate_key.json": {
+    "expected_loc": "actors.0.key",
+    "many": false,
+    "model": "ExtractionOutput"
+  },
+  "extraction_measured_by_by_model.json": {
+    "expected_loc": "relations.0.type",
+    "many": false,
+    "model": "ExtractionOutput"
+  },
+  "fact_without_quote.json": {
+    "expected_loc": "evidence.quote",
+    "many": false,
+    "model": "Requirement"
+  },
+  "relation_decision_without_evidence.json": {
+    "expected_loc": "relação sem source_id",
+    "many": false,
+    "model": "Relation"
+  },
+  "relation_without_evidence.json": {
+    "expected_loc": "provenance",
+    "many": false,
+    "model": "Relation"
+  },
+  "relation_wrong_target.json": {
+    "expected_loc": "target",
+    "many": false,
+    "model": "Relation"
+  },
+  "requirement_decision_without_evidence.json": {
+    "expected_loc": "requisito gravado precisa de source_id",
+    "many": false,
+    "model": "Requirement"
+  },
+  "requirement_id_not_from_evidence.json": {
+    "expected_loc": "requirement_id",
+    "many": false,
+    "model": "Requirement"
+  },
+  "requirement_low_confidence_not_in_review.json": {
+    "expected_loc": "status",
+    "many": false,
+    "model": "Requirement"
+  },
+  "requirement_priority_not_moscow.json": {
+    "expected_loc": "priority",
+    "many": false,
+    "model": "Requirement"
+  },
+  "requirement_revision_without_previous.json": {
+    "expected_loc": "previous_statement",
+    "many": false,
+    "model": "Requirement"
+  },
+  "requirement_second_revision.json": {
+    "expected_loc": "revision",
+    "many": false,
+    "model": "Requirement"
+  },
+  "requirement_unknown_field.json": {
+    "expected_loc": "owner",
+    "many": false,
+    "model": "Requirement"
+  },
+  "requirement_without_evidence.json": {
+    "expected_loc": "provenance",
+    "many": false,
+    "model": "Requirement"
+  }
+}

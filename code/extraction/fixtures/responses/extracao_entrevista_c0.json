@@ -1,0 +1,57 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste, não veio de modelo. Extração da entrevista sintética com dois chunks por chamada, primeira chamada (chunks 0 e 1). O chunk 0 é o cabeçalho e não gera requisito. Nenhum trecho tem sinal de prioridade ou de verificação (protocolo de anotação), então os dois campos ficam nulos.",
+  "response": {
+    "requirements": [
+      {
+        "key": "R1",
+        "statement": "O sistema deve permitir que técnicos reservem um equipamento por horário.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.8,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "Os técnicos precisam reservar um equipamento por horário"}
+        ]
+      },
+      {
+        "key": "R2",
+        "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.9,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "o sistema tem de impedir duas reservas no mesmo horário"}
+        ]
+      }
+    ],
+    "actors": [
+      {"key": "A1", "name": "Coordenadora do laboratório", "kind": "stakeholder",
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "Coordenadora do laboratório"}]},
+      {"key": "A2", "name": "técnicos", "kind": "user_role",
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "Os técnicos"}]}
+    ],
+    "components": [],
+    "entities": [
+      {"key": "E1", "name": "planilha compartilhada", "entity_type": "documento", "description": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "planilha compartilhada"}]}
+    ],
+    "relations": [
+      {"type": "requested_by", "source_key": "R2", "target_key": "A1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "o sistema tem de impedir duas reservas no mesmo horário"}]},
+      {"type": "benefits_actor", "source_key": "R1", "target_key": "A2", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "Os técnicos precisam reservar um equipamento por horário"}]}
+    ]
+  }
+}

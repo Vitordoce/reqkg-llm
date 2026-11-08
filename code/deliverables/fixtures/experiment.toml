@@ -1,0 +1,53 @@
+# Configuração da corrida sintética de code/deliverables/fixtures/. Cópia de
+# code/experiments/config/experiment.toml em 10 out 2026. O manifesto da corrida guarda o SHA-256 deste arquivo.
+
+schema_version = "2"
+rules_version = "3"
+conditions = ["LLM-only", "REQKG-grounded"]
+metrics = [
+  "precision",
+  "recall",
+  "f1",
+  "bertscore_f1",
+  "completeness_ratio",
+  "provenance_coverage",
+  "unsupported_claim_rate",
+  "rule_violation_rate",
+]
+
+[model]
+provider = "anthropic"
+# Vazio de propósito. ExperimentConfig.ensure_runnable() recusa rodar até a versão ser escolhida.
+model_id = ""
+temperature = 0.0
+max_tokens = 4096
+
+[chunking]
+strategy = "paragraph"
+size_chars = 1500
+overlap_chars = 0
+
+[extraction]
+# Valor inicial. Com chunk por parágrafo, cada chamada vê alguns parágrafos vizinhos.
+chunks_per_call = 6
+
+[retrieval]
+mode = "local"
+max_items = 30
+max_hops = 2
+
+[refinement]
+max_calls = 1
+
+[review]
+# Valor inicial. Candidato abaixo do limiar recebe low_confidence e vai para needs_review.
+confidence_threshold = 0.6
+
+[evaluation]
+# Vazio de propósito. O texto da amostra é português e o do PROMISE é inglês.
+bertscore_model = ""
+seed = 20261010
+
+[repetitions]
+structural_sample = 3
+promise = 1

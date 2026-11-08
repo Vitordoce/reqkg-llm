@@ -1,0 +1,13 @@
+{
+  "case_id": "fixture-entrevista",
+  "classification": {
+    "label": "PE",
+    "promise_id": "PROMISE-NFR-0001",
+    "rationale": "Declara tempo máximo de resposta.",
+    "used_context_ids": []
+  },
+  "error": "relations.0.target_key: 'A9' não é actor",
+  "run_index": 1,
+  "stage": "extraction",
+  "status": "invalid_output"
+}

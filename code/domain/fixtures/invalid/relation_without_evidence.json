@@ -1,0 +1,18 @@
+{
+  "provenance": {
+    "evidence": [],
+    "note": null,
+    "origin": "extracted_fact",
+    "validation": "unvalidated"
+  },
+  "relation_id": "rel-13f741016e540d94",
+  "source": {
+    "id": "req-9355e7e726822797",
+    "kind": "requirement"
+  },
+  "target": {
+    "id": "act-a8ce03319323904b",
+    "kind": "actor"
+  },
+  "type": "requested_by"
+}

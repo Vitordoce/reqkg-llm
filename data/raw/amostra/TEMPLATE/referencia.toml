@@ -1,0 +1,68 @@
+# EXEMPLO do formato da referência. Não faz parte da amostra.
+# Protocolo: instructions/PROTOCOLO_ANOTACAO.md. Validação, a partir da raiz:
+#   PYTHONPATH=code .venv/bin/python -m experiments.annotation data/raw/amostra/TEMPLATE
+#
+# Valores fechados (os mesmos de code/domain/enums.py):
+#   kind                 interview, user_story, business_document, meeting_record,
+#                        existing_system_description
+#   type                 functional, non_functional, constraint
+#   priority             must, should, could, wont
+#   verification_method  inspection, analysis, demonstration, test
+#   quality_attributes   performance, security, usability, reliability,
+#                        maintainability, portability
+#
+# Campo sem suporte no texto fica fora do arquivo. Não escreva priority = "" nem
+# quality_attributes de palpite.
+
+protocol_version = "1"
+
+[[artifact]]
+id = "ex01"                # o arquivo é ex01.txt, na mesma pasta
+kind = "interview"
+title = "Entrevista sobre empréstimo de livros numa biblioteca escolar"
+
+[[requirement]]
+id = "ex01-R01"            # <artefato>-R<dois dígitos>
+artifact = "ex01"
+statement = "O sistema deve registrar cada empréstimo com o nome do aluno, o livro e a data de devolução."
+type = "functional"
+quote = "registrar cada empréstimo com o nome do aluno, o livro e a data de devolução"
+priority = "must"
+priority_quote = "O essencial, sem o qual não adianta trocar o caderno"
+verification_method = "demonstration"
+verification_quote = "quero ver na frente da coordenação um empréstimo sendo registrado"
+
+[[requirement]]
+id = "ex01-R02"
+artifact = "ex01"
+statement = "O sistema deve listar os alunos com devolução de livro atrasada."
+type = "functional"
+quote = "no fim do mês eu preciso ver quem está com livro atrasado"
+verification_method = "demonstration"
+verification_quote = "depois a lista de atrasados aparecendo"
+# Sem priority: "preciso" é o verbo da necessidade, não uma ordem de importância.
+
+[[requirement]]
+id = "ex01-R03"
+artifact = "ex01"
+statement = "A consulta de devoluções atrasadas deve abrir rapidamente."
+type = "non_functional"
+quote = "A consulta tem de abrir rápido, porque faço isso no intervalo entre as aulas."
+quality_attributes = ["performance"]
+notes = "O texto não dá limite de tempo. A referência mantém 'rapidamente' e não inventa valor."
+
+[[requirement]]
+id = "ex01-R04"
+artifact = "ex01"
+statement = "O sistema deve funcionar sem conexão com a internet."
+type = "constraint"
+quote = """
+o programa tem que funcionar
+sem conexão"""
+notes = "Citação em várias linhas: quebras e espaços extras não contam na comparação."
+
+[[relation]]
+type = "depends_on"
+source = "ex01-R02"
+target = "ex01-R01"
+quote = "Isso só funciona se cada empréstimo estiver registrado"

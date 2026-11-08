@@ -1,0 +1,46 @@
+{
+  "classification": {
+    "file": "code/extraction/prompts/classification_v1.md",
+    "output_model": "ClassificationOutput",
+    "output_schema_sha256": "d79ecd476c772844bb54964560039caedb104fd97f0dbce6a860d582d9181eb8",
+    "sha256": "286454fc7d69a5e47f14ff95f360a78d0ece3c6f15fec599cfa3c2127b769481",
+    "superseded": [],
+    "version": 1
+  },
+  "classification_refinement": {
+    "file": "code/extraction/prompts/classification_refinement_v1.md",
+    "output_model": "ClassificationOutput",
+    "output_schema_sha256": "d79ecd476c772844bb54964560039caedb104fd97f0dbce6a860d582d9181eb8",
+    "sha256": "9ca8144d28fe8fef4dc31f2769375f2742bfac56ec3af53e5647a1261c545e69",
+    "superseded": [],
+    "version": 1
+  },
+  "extraction": {
+    "file": "code/extraction/prompts/extraction_v2.md",
+    "output_model": "ExtractionOutput",
+    "output_schema_sha256": "f6dcd93f068bdb4c906274b72d29138662ae203cdfa25c69c2ac836b501c0009",
+    "sha256": "392e20809fd7cdf9707c03fb3b3a8d42e71643bd179cefbe72401eb39c04362f",
+    "superseded": [
+      {
+        "reason": "tirava a prioridade do verbo modal; contrariava instructions/PROTOCOLO_ANOTACAO.md",
+        "sha256": "0062847dd8ee88974ac6267c05f2aee859c0a49e46d42a1ba59694a9e739da88",
+        "version": 1
+      }
+    ],
+    "version": 2
+  },
+  "refinement": {
+    "file": "code/extraction/prompts/refinement_v2.md",
+    "output_model": "RefinementOutput",
+    "output_schema_sha256": "f96c2c8c88c67f19a1b247fe1536080b83a1625edcb6f9c9eb1a87bc5be9c5e4",
+    "sha256": "978b36a853a14ee32545fd42201b58ae503e51649230c9635bcd5ddaef34f203",
+    "superseded": [
+      {
+        "reason": "aceitava marcador de obrigação como prioridade; contrariava instructions/PROTOCOLO_ANOTACAO.md",
+        "sha256": "fa1b661e7f657ebb8549d288a36eb8d6b5d453073a77c64616d17027f4b62147",
+        "version": 1
+      }
+    ],
+    "version": 2
+  }
+}

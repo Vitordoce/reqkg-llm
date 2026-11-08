@@ -1,0 +1,1353 @@
+{
+  "format": "reqkg-instance/1",
+  "logical_state": {
+    "nodes": {
+      "Actor": 3,
+      "Entity": 1,
+      "QualityAttribute": 2,
+      "Requirement": 7,
+      "SoftwareComponent": 1,
+      "SourceChunk": 20,
+      "SourceDocument": 3
+    },
+    "relations": {
+      "ALLOCATED_TO": 1,
+      "BENEFITS_ACTOR": 1,
+      "CONTAINS": 20,
+      "DEPENDS_ON": 2,
+      "DERIVED_FROM": 7,
+      "MEASURED_BY": 4,
+      "MENTIONS": 1,
+      "REQUESTED_BY": 4,
+      "SUPPORTS": 7
+    },
+    "sha256": "877e01d8a9df2dcdcb09dd15367962a2c6d72e30e9363ee38d62202c9b3128c5"
+  },
+  "nodes": [
+    {
+      "id": "act-8b59336233f82449",
+      "label": "Actor",
+      "properties": {
+        "actor_id": "act-8b59336233f82449",
+        "evidence_chunk_ids": [
+          "chk-e317d2f30be53bb4"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-e317d2f30be53bb4\",\"quote\":\"O responsável pela calibração\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "kind": "stakeholder",
+        "name": "Responsável pela calibração",
+        "origin": "extracted_fact",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "act-a8ce03319323904b",
+      "label": "Actor",
+      "properties": {
+        "actor_id": "act-a8ce03319323904b",
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8",
+          "chk-c5b123cf9e21984a"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"Coordenadora do laboratório\",\"source_id\":\"src-3f478d516d9d807d\"},{\"chunk_id\":\"chk-c5b123cf9e21984a\",\"quote\":\"A coordenadora relatou\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "kind": "stakeholder",
+        "name": "Coordenadora do laboratório",
+        "origin": "extracted_fact",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "act-f800de8bd6992ad6",
+      "label": "Actor",
+      "properties": {
+        "actor_id": "act-f800de8bd6992ad6",
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"Técnico\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "kind": "user_role",
+        "name": "Técnico",
+        "origin": "extracted_fact",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "ent-349347367532ca62",
+      "label": "Entity",
+      "properties": {
+        "entity_id": "ent-349347367532ca62",
+        "entity_type": "evento",
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"a calibração vence\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "name": "calibração",
+        "origin": "extracted_fact",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "qa-performance",
+      "label": "QualityAttribute",
+      "properties": {
+        "category": "performance",
+        "quality_attribute_id": "qa-performance"
+      }
+    },
+    {
+      "id": "qa-security",
+      "label": "QualityAttribute",
+      "properties": {
+        "category": "security",
+        "quality_attribute_id": "qa-security"
+      }
+    },
+    {
+      "id": "req-3b1ddc6aee370cc7",
+      "label": "Requirement",
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"Os técnicos precisam reservar um equipamento por horário\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "quality_attributes": [],
+        "requirement_id": "req-3b1ddc6aee370cc7",
+        "review_flags": [],
+        "revision": 0,
+        "statement": "O sistema deve permitir que o técnico reserve um equipamento por horário.",
+        "status": "draft",
+        "type": "functional",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "req-72bbb881bec43307",
+      "label": "Requirement",
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "previous_statement": "O sistema deve avisar o responsável quando a calibração vencer.",
+        "quality_attributes": [
+          "performance"
+        ],
+        "quantitative_value": "até cinco minutos",
+        "requirement_id": "req-72bbb881bec43307",
+        "review_flags": [],
+        "revision": 1,
+        "statement": "O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence.",
+        "status": "draft",
+        "type": "non_functional",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "req-9355e7e726822797",
+      "label": "Requirement",
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"o sistema tem de impedir duas reservas no mesmo horário\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "priority": "must",
+        "quality_attributes": [],
+        "requirement_id": "req-9355e7e726822797",
+        "review_flags": [],
+        "revision": 0,
+        "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+        "status": "draft",
+        "type": "functional",
+        "validation": "unvalidated",
+        "verification_method": "test"
+      }
+    },
+    {
+      "id": "req-9dc3db710289946e",
+      "label": "Requirement",
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-e317d2f30be53bb4"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-e317d2f30be53bb4\",\"quote\":\"Ele quer o aviso no próprio sistema, no mesmo dia do vencimento\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "origin": "extracted_fact",
+        "previous_statement": "O aviso de vencimento da calibração deve aparecer no próprio sistema no mesmo dia do vencimento.",
+        "quality_attributes": [
+          "performance"
+        ],
+        "quantitative_value": "no mesmo dia do vencimento",
+        "requirement_id": "req-9dc3db710289946e",
+        "review_flags": [],
+        "revision": 1,
+        "statement": "O aviso de vencimento da calibração deve aparecer no próprio sistema no mesmo dia do vencimento.",
+        "status": "draft",
+        "type": "non_functional",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "req-c8625b22e934be3a",
+      "label": "Requirement",
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-202c7f98847e276d"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-202c7f98847e276d\",\"quote\":\"só a coordenação pode cancelar reserva de outra pessoa\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "quality_attributes": [
+          "security"
+        ],
+        "requirement_id": "req-c8625b22e934be3a",
+        "review_flags": [
+          "low_confidence"
+        ],
+        "revision": 0,
+        "statement": "Somente a coordenação pode cancelar a reserva de outra pessoa.",
+        "status": "needs_review",
+        "type": "non_functional",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "req-d6f0dc9db697e655",
+      "label": "Requirement",
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"A consulta da agenda precisa ser rápida\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "quality_attributes": [
+          "performance"
+        ],
+        "requirement_id": "req-d6f0dc9db697e655",
+        "review_flags": [
+          "quantitative_value_pending"
+        ],
+        "revision": 0,
+        "statement": "A consulta da agenda deve ser rápida.",
+        "status": "draft",
+        "type": "non_functional",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "req-de8ecb7a42bffc2b",
+      "label": "Requirement",
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-c5b123cf9e21984a"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-c5b123cf9e21984a\",\"quote\":\"Ela pediu que o sistema novo recuse a segunda reserva e mostre quem já reservou\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "origin": "extracted_fact",
+        "previous_statement": "O sistema deve recusar a segunda reserva do mesmo equipamento no mesmo horário e mostrar quem já reservou.",
+        "quality_attributes": [],
+        "requirement_id": "req-de8ecb7a42bffc2b",
+        "review_flags": [],
+        "revision": 1,
+        "statement": "O sistema deve recusar a segunda reserva do mesmo equipamento no mesmo horário e mostrar quem já reservou.",
+        "status": "draft",
+        "type": "functional",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "cmp-b1a54ee275e3bd05",
+      "label": "SoftwareComponent",
+      "properties": {
+        "component_id": "cmp-b1a54ee275e3bd05",
+        "description": "Consulta e registro das reservas.",
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"A consulta da agenda\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "name": "Agenda de reservas",
+        "origin": "extracted_fact",
+        "validation": "unvalidated"
+      }
+    },
+    {
+      "id": "chk-17a9d1fff03463c4",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 1875,
+        "char_start": 1696,
+        "chunk_id": "chk-17a9d1fff03463c4",
+        "index": 4,
+        "occurrence": 0,
+        "sha256": "f8e1f118abf4b68b9de7c29bea4484fce4c2611d0a9f0ab42870073dd6fa7898",
+        "source_id": "src-71d5fe87d6dfb68a",
+        "text": "Quem mais usa a planilha são os técnicos, que reservam equipamentos várias vezes por dia. A coordenadora consulta a agenda no começo da semana e resolve os conflitos que aparecem."
+      }
+    },
+    {
+      "id": "chk-202c7f98847e276d",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 704,
+        "char_start": 558,
+        "chunk_id": "chk-202c7f98847e276d",
+        "index": 3,
+        "occurrence": 0,
+        "sha256": "bd21e0ae36aa64d30a2e7e53013c38545673ecc47e2a9d0b62b89da6a761298e",
+        "source_id": "src-3f478d516d9d807d",
+        "text": "Coordenadora do laboratório: só a coordenação pode cancelar reserva de outra pessoa. Os dados de uso ficam guardados por dois anos para auditoria."
+      }
+    },
+    {
+      "id": "chk-2fb6f0ded681dbdc",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 368,
+        "char_start": 356,
+        "chunk_id": "chk-2fb6f0ded681dbdc",
+        "index": 5,
+        "occurrence": 0,
+        "sha256": "2ab1d105e6863d17d153b4b6ffbb803d279249870be150f3d7d1e61d5e900f97",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "## Discussão"
+      }
+    },
+    {
+      "id": "chk-30a9fc4f5c7a4c3c",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 859,
+        "char_start": 841,
+        "chunk_id": "chk-30a9fc4f5c7a4c3c",
+        "index": 9,
+        "occurrence": 0,
+        "sha256": "069be6dc292df6b151c4994a6e9be7e7fdb29d34d426f5cfe97bb48c45f3f9c5",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "## Encaminhamentos"
+      }
+    },
+    {
+      "id": "chk-31a5b53efed6545e",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 155,
+        "char_start": 100,
+        "chunk_id": "chk-31a5b53efed6545e",
+        "index": 1,
+        "occurrence": 0,
+        "sha256": "8714d42ff43265e5a658cacbbb46543464a102cbb94af1224add678e548d6033",
+        "source_id": "src-71d5fe87d6dfb68a",
+        "text": "Descrição do processo atual de reserva de equipamentos."
+      }
+    },
+    {
+      "id": "chk-33ff87b7b52d787a",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 839,
+        "char_start": 738,
+        "chunk_id": "chk-33ff87b7b52d787a",
+        "index": 8,
+        "occurrence": 0,
+        "sha256": "b57aac37af4f3033534a4c55a3042faed4797f1c5e8a538f581de1e17b8ac0ce",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "Um técnico perguntou se a agenda vai funcionar no celular. Ficou registrado como dúvida, sem decisão."
+      }
+    },
+    {
+      "id": "chk-3ebce0a3871c0412",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 1003,
+        "char_start": 861,
+        "chunk_id": "chk-3ebce0a3871c0412",
+        "index": 10,
+        "occurrence": 0,
+        "sha256": "fb6e6752b889316f20ccfdfb85876ef3ea81c5d1132239643d72e6d46da43268",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "A coordenação vai listar os equipamentos que exigem calibração. Os técnicos vão anotar por uma semana os conflitos de reserva que encontrarem."
+      }
+    },
+    {
+      "id": "chk-3f2c4b799d53275b",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 354,
+        "char_start": 244,
+        "chunk_id": "chk-3f2c4b799d53275b",
+        "index": 4,
+        "occurrence": 0,
+        "sha256": "f9cb795b6548186075bb24c8790ef0a9916774c66cd522b0125ee3eb9c608633",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "- Reservas de equipamento feitas fora da planilha.\n- Aviso de calibração vencida.\n- Retenção dos dados de uso."
+      }
+    },
+    {
+      "id": "chk-3ff66bda68520811",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 98,
+        "char_start": 0,
+        "chunk_id": "chk-3ff66bda68520811",
+        "index": 0,
+        "occurrence": 0,
+        "sha256": "35acfe1634212c4e2fe110c07d99233e913f9e3a3ce064bb9676a723bceb728b",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "Texto sintético de desenvolvimento da ingestão. Não descreve um sistema real nem o estudo de caso."
+      }
+    },
+    {
+      "id": "chk-55ab663b5fa8b694",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 144,
+        "char_start": 100,
+        "chunk_id": "chk-55ab663b5fa8b694",
+        "index": 1,
+        "occurrence": 0,
+        "sha256": "443d71daef67c335e7a7455c24785c5c75714d6f3c1b868323c7a0b777d8ac12",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "# Ata sintética da reunião de acompanhamento"
+      }
+    },
+    {
+      "id": "chk-8719df811dd089f4",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 98,
+        "char_start": 0,
+        "chunk_id": "chk-8719df811dd089f4",
+        "index": 0,
+        "occurrence": 0,
+        "sha256": "35acfe1634212c4e2fe110c07d99233e913f9e3a3ce064bb9676a723bceb728b",
+        "source_id": "src-71d5fe87d6dfb68a",
+        "text": "Texto sintético de desenvolvimento da ingestão. Não descreve um sistema real nem o estudo de caso."
+      }
+    },
+    {
+      "id": "chk-87cf60554babc0de",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 232,
+        "char_start": 146,
+        "chunk_id": "chk-87cf60554babc0de",
+        "index": 2,
+        "occurrence": 0,
+        "sha256": "969f39da1a7012ec8440f4ea60eddf3448b3c66ade85ed92d167ea71231b1293",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "Presentes: coordenadora do laboratório, dois técnicos e o responsável pela calibração."
+      }
+    },
+    {
+      "id": "chk-9887a343ffc23114",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 242,
+        "char_start": 234,
+        "chunk_id": "chk-9887a343ffc23114",
+        "index": 3,
+        "occurrence": 0,
+        "sha256": "2d637e9b558ab2c67c08623cc1d9f3580f7bb7b9d5f70edee6ed19b851ffb261",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "## Pauta"
+      }
+    },
+    {
+      "id": "chk-9e31855f3c8b8ca8",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 344,
+        "char_start": 131,
+        "chunk_id": "chk-9e31855f3c8b8ca8",
+        "index": 1,
+        "occurrence": 0,
+        "sha256": "3238a5f7639593eba0a1f6d1ba3841f2f13f272c8ef29c0933e990bdc821f479",
+        "source_id": "src-3f478d516d9d807d",
+        "text": "Coordenadora do laboratório: hoje a reserva dos equipamentos é feita numa planilha compartilhada. Os técnicos precisam reservar um equipamento por horário e o sistema tem de impedir duas reservas no mesmo horário."
+      }
+    },
+    {
+      "id": "chk-b9116d822fb57241",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 1694,
+        "char_start": 1522,
+        "chunk_id": "chk-b9116d822fb57241",
+        "index": 3,
+        "occurrence": 0,
+        "sha256": "03dc1b33ee18ec9b6a733ea5285a1e7bd148496bf9d864a0606c928a483a931a",
+        "source_id": "src-71d5fe87d6dfb68a",
+        "text": "Para cumprir essa exigência, a coordenadora exporta a planilha em PDF no fim de cada mês e guarda os arquivos numa pasta de rede, sem índice e sem controle de quem acessou."
+      }
+    },
+    {
+      "id": "chk-c5b123cf9e21984a",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 556,
+        "char_start": 370,
+        "chunk_id": "chk-c5b123cf9e21984a",
+        "index": 6,
+        "occurrence": 0,
+        "sha256": "542b2a489303ae0650f48c72ac6ddb9138c2265ec736f809750494dbdc8f9562",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "A coordenadora relatou que duas reservas do mesmo osciloscópio caíram no mesmo horário na semana passada. Ela pediu que o sistema novo recuse a segunda reserva e mostre quem já reservou."
+      }
+    },
+    {
+      "id": "chk-dcc453cd241a756d",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 1521,
+        "char_start": 157,
+        "chunk_id": "chk-dcc453cd241a756d",
+        "index": 2,
+        "occurrence": 0,
+        "sha256": "128baaf0fff322ab3ae9b0b8ed17a8cd1c15624319d3789b2c8fd36f8b0db9c2",
+        "source_id": "src-71d5fe87d6dfb68a",
+        "text": "O laboratório usa hoje uma planilha compartilhada com uma aba por mês e uma linha por equipamento. Cada técnico abre a planilha, procura a linha do equipamento e escreve o próprio nome na coluna do horário que quer usar. Não há trava de edição, então duas pessoas conseguem escrever na mesma célula ao mesmo tempo, e a última gravação apaga a anterior sem aviso. Quando isso acontece, os dois técnicos só descobrem o conflito na hora de usar o equipamento. A planilha também guarda, numa aba separada, a data da última calibração de cada equipamento. Essa aba é atualizada à mão pelo responsável pela calibração, que costuma fazer isso uma vez por semana. Por isso a data de vencimento exibida pode estar desatualizada em até sete dias. Ninguém recebe aviso automático quando uma calibração vence, e a única forma de saber é abrir a aba e comparar a data com o calendário. A coordenadora consegue apagar qualquer linha da planilha, mas os técnicos também conseguem, porque a planilha não distingue perfis de acesso. Já houve um caso em que um técnico apagou por engano as reservas de uma semana inteira, e a coordenação reconstruiu a agenda a partir das mensagens trocadas no grupo do laboratório. O histórico de uso dos equipamentos é exigido em auditorias internas, mas a planilha não guarda versões antigas além das últimas trinta, e a auditoria pede dois anos."
+      }
+    },
+    {
+      "id": "chk-e317d2f30be53bb4",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 736,
+        "char_start": 558,
+        "chunk_id": "chk-e317d2f30be53bb4",
+        "index": 7,
+        "occurrence": 0,
+        "sha256": "9c8e88ce663db34f07c3c05db84a2c7dd5e66076ed092355df3ff2bb61fe03e3",
+        "source_id": "src-339ed9b9a545ccbc",
+        "text": "O responsável pela calibração disse que hoje o aviso de vencimento chega por e-mail, às vezes com dias de atraso. Ele quer o aviso no próprio sistema, no mesmo dia do vencimento."
+      }
+    },
+    {
+      "id": "chk-f7faa2ea1130ac73",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 556,
+        "char_start": 346,
+        "chunk_id": "chk-f7faa2ea1130ac73",
+        "index": 2,
+        "occurrence": 0,
+        "sha256": "ae72a5b7b9745fd5cb4b7a8a0fd2a139711dfc9ae3cee4254015d598bb4a810a",
+        "source_id": "src-3f478d516d9d807d",
+        "text": "Técnico: quando o equipamento sai de calibração, alguém precisa avisar. O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence. A consulta da agenda precisa ser rápida."
+      }
+    },
+    {
+      "id": "chk-fb10eaa327ae4290",
+      "label": "SourceChunk",
+      "properties": {
+        "char_end": 129,
+        "char_start": 0,
+        "chunk_id": "chk-fb10eaa327ae4290",
+        "index": 0,
+        "occurrence": 0,
+        "sha256": "24424e3a0040275bda81adafc58389c3377ad16658fb3c794622544b9d28553f",
+        "source_id": "src-3f478d516d9d807d",
+        "text": "Entrevista sintética de desenvolvimento. Texto escrito para testar o contrato. Não descreve um sistema real nem o estudo de caso."
+      }
+    },
+    {
+      "id": "src-339ed9b9a545ccbc",
+      "label": "SourceDocument",
+      "properties": {
+        "char_count": 1004,
+        "kind": "meeting_record",
+        "path": "code/ingestion/fixtures/ata_sintetica.md",
+        "sha256": "3b9c5d000e99031d05ca6980ca083e7801ac4be805d435ca8a4ded55496bb7c8",
+        "source_id": "src-339ed9b9a545ccbc",
+        "title": "Ata sintética da reunião de acompanhamento"
+      }
+    },
+    {
+      "id": "src-3f478d516d9d807d",
+      "label": "SourceDocument",
+      "properties": {
+        "char_count": 705,
+        "kind": "interview",
+        "path": "code/domain/fixtures/corpus/entrevista_sintetica.txt",
+        "sha256": "ec33b403b91299165cc86651d8c0751927a1225a27d04adbd912b792ba3676ac",
+        "source_id": "src-3f478d516d9d807d",
+        "title": "Entrevista sintética de desenvolvimento"
+      }
+    },
+    {
+      "id": "src-71d5fe87d6dfb68a",
+      "label": "SourceDocument",
+      "properties": {
+        "char_count": 1876,
+        "kind": "existing_system_description",
+        "path": "code/ingestion/fixtures/descricao_sintetica.txt",
+        "sha256": "957e15615e3f88e5efa775b23a978a9cfa7761a3087ffc007908c6c0a342b19b",
+        "source_id": "src-71d5fe87d6dfb68a",
+        "title": "Descrição sintética do processo atual"
+      }
+    }
+  ],
+  "origin": {
+    "cases": [
+      "src-339ed9b9a545ccbc",
+      "src-3f478d516d9d807d",
+      "src-71d5fe87d6dfb68a"
+    ],
+    "command": "PYTHONPATH=code .venv/bin/python -m deliverables sintetico-entrevista --condition REQKG-grounded --run-index 0 --name fixture-sintetico --runs-dir code/deliverables/fixtures/runs --config code/deliverables/fixtures/experiment.toml",
+    "condition": "REQKG-grounded",
+    "inputs": {
+      "case_results": {
+        "path": "code/deliverables/fixtures/runs/sintetico-entrevista/case_results.jsonl",
+        "sha256": "b74be9181c437a923b21840eb8175ae8d2673d35695d1ccb6331ade1b03ac676"
+      },
+      "config": {
+        "path": "code/deliverables/fixtures/experiment.toml",
+        "sha256": "55a6bc3ea88f82f06dba7bc42ab4f1d1f9144426fbf23e530d1dc8489954b5bc"
+      },
+      "finals": {
+        "path": "code/deliverables/fixtures/runs/sintetico-entrevista/finals.jsonl",
+        "sha256": "1947cd3370c7e148fa5c5623da653f6d3cd971762da9b209c0df196317237a49"
+      },
+      "ingestion:data/processed/ingestion/fixture.json": {
+        "path": "data/processed/ingestion/fixture.json",
+        "sha256": "49756503282cf362a9f61a496f0fe29b6ea8e69dfa1ecf71f822b801cbe44a7f"
+      },
+      "manifest": {
+        "path": "code/deliverables/fixtures/runs/sintetico-entrevista/manifest.json",
+        "sha256": "8f0b9e91174926d3a6ce459e332de65f9621317508314bfcc6e10d6cf5baedab"
+      },
+      "rejections": {
+        "path": "code/deliverables/fixtures/runs/sintetico-entrevista/rejections.jsonl",
+        "sha256": "b82cf382979ae3165563995a819e1f2d01e7ecd48529689c17365c34e4b6304a"
+      }
+    },
+    "model_id": "nenhum-fixture-sintetico",
+    "replay": true,
+    "run_id": "sintetico-entrevista",
+    "run_index": 0
+  },
+  "relations": [
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"A consulta da agenda precisa ser rápida\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-51fb303ef465f38c",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-d6f0dc9db697e655",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "cmp-b1a54ee275e3bd05",
+        "label": "SoftwareComponent"
+      },
+      "type": "ALLOCATED_TO"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"alguém precisa avisar\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-612f3dd24414a08d",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-72bbb881bec43307",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "act-f800de8bd6992ad6",
+        "label": "Actor"
+      },
+      "type": "BENEFITS_ACTOR"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-2fb6f0ded681dbdc",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-30a9fc4f5c7a4c3c",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-33ff87b7b52d787a",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-3ebce0a3871c0412",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-3f2c4b799d53275b",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-3ff66bda68520811",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-55ab663b5fa8b694",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-87cf60554babc0de",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-9887a343ffc23114",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-c5b123cf9e21984a",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-e317d2f30be53bb4",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-202c7f98847e276d",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-9e31855f3c8b8ca8",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-f7faa2ea1130ac73",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-fb10eaa327ae4290",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-71d5fe87d6dfb68a",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-17a9d1fff03463c4",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-71d5fe87d6dfb68a",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-31a5b53efed6545e",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-71d5fe87d6dfb68a",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-8719df811dd089f4",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-71d5fe87d6dfb68a",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-b9116d822fb57241",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "src-71d5fe87d6dfb68a",
+        "label": "SourceDocument"
+      },
+      "target": {
+        "id": "chk-dcc453cd241a756d",
+        "label": "SourceChunk"
+      },
+      "type": "CONTAINS"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"Os técnicos precisam reservar\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-f7fea0ec3d11f64a",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-3b1ddc6aee370cc7",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "req-9355e7e726822797",
+        "label": "Requirement"
+      },
+      "type": "DEPENDS_ON"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"o sistema tem de impedir duas reservas no mesmo horário\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-9ca552a64fb1a1f0",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-9355e7e726822797",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "req-3b1ddc6aee370cc7",
+        "label": "Requirement"
+      },
+      "type": "DEPENDS_ON"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"Os técnicos precisam reservar um equipamento por horário\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-2b8e8f94fb006076",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-3b1ddc6aee370cc7",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "type": "DERIVED_FROM"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-85affd97415c10b8",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-72bbb881bec43307",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "type": "DERIVED_FROM"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"o sistema tem de impedir duas reservas no mesmo horário\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-21c40c769148c014",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-9355e7e726822797",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "type": "DERIVED_FROM"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-e317d2f30be53bb4"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-e317d2f30be53bb4\",\"quote\":\"Ele quer o aviso no próprio sistema, no mesmo dia do vencimento\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-456a9fac096e8eb6",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-9dc3db710289946e",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "type": "DERIVED_FROM"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-202c7f98847e276d"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-202c7f98847e276d\",\"quote\":\"só a coordenação pode cancelar reserva de outra pessoa\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-44e3bf3b452efba6",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-c8625b22e934be3a",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "type": "DERIVED_FROM"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"A consulta da agenda precisa ser rápida\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-16e2fcf01a06b435",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-d6f0dc9db697e655",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "src-3f478d516d9d807d",
+        "label": "SourceDocument"
+      },
+      "type": "DERIVED_FROM"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-c5b123cf9e21984a"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-c5b123cf9e21984a\",\"quote\":\"Ela pediu que o sistema novo recuse a segunda reserva e mostre quem já reservou\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-aecef1eb5aab389e",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-de8ecb7a42bffc2b",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "src-339ed9b9a545ccbc",
+        "label": "SourceDocument"
+      },
+      "type": "DERIVED_FROM"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-f946f5b662d5dce2",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-72bbb881bec43307",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "qa-performance",
+        "label": "QualityAttribute"
+      },
+      "type": "MEASURED_BY"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-e317d2f30be53bb4"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-e317d2f30be53bb4\",\"quote\":\"Ele quer o aviso no próprio sistema, no mesmo dia do vencimento\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-5bd7ecb05ed76cb0",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-9dc3db710289946e",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "qa-performance",
+        "label": "QualityAttribute"
+      },
+      "type": "MEASURED_BY"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-202c7f98847e276d"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-202c7f98847e276d\",\"quote\":\"só a coordenação pode cancelar reserva de outra pessoa\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-d54a400d2263cf79",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-c8625b22e934be3a",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "qa-security",
+        "label": "QualityAttribute"
+      },
+      "type": "MEASURED_BY"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"A consulta da agenda precisa ser rápida\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-734056841dde6b8e",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-d6f0dc9db697e655",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "qa-performance",
+        "label": "QualityAttribute"
+      },
+      "type": "MEASURED_BY"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-f7faa2ea1130ac73"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-f7faa2ea1130ac73\",\"quote\":\"a calibração vence\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-1bb86fb72c07745b",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "chk-f7faa2ea1130ac73",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "ent-349347367532ca62",
+        "label": "Entity"
+      },
+      "type": "MENTIONS"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-9e31855f3c8b8ca8"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-9e31855f3c8b8ca8\",\"quote\":\"Os técnicos precisam reservar um equipamento por horário\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-c0fed144eab30533",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-3b1ddc6aee370cc7",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "act-f800de8bd6992ad6",
+        "label": "Actor"
+      },
+      "type": "REQUESTED_BY"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-e317d2f30be53bb4"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-e317d2f30be53bb4\",\"quote\":\"Ele quer o aviso no próprio sistema\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-8ca2faa9b87a1e84",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-9dc3db710289946e",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "act-8b59336233f82449",
+        "label": "Actor"
+      },
+      "type": "REQUESTED_BY"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-202c7f98847e276d"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-202c7f98847e276d\",\"quote\":\"Coordenadora do laboratório: só a coordenação pode cancelar\",\"source_id\":\"src-3f478d516d9d807d\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-2cba753dc8545a94",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-c8625b22e934be3a",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "act-a8ce03319323904b",
+        "label": "Actor"
+      },
+      "type": "REQUESTED_BY"
+    },
+    {
+      "properties": {
+        "evidence_chunk_ids": [
+          "chk-c5b123cf9e21984a"
+        ],
+        "evidence_json": "[{\"chunk_id\":\"chk-c5b123cf9e21984a\",\"quote\":\"Ela pediu que o sistema novo recuse a segunda reserva\",\"source_id\":\"src-339ed9b9a545ccbc\"}]",
+        "origin": "extracted_fact",
+        "relation_id": "rel-aab8ee13086e6d29",
+        "validation": "unvalidated"
+      },
+      "source": {
+        "id": "req-de8ecb7a42bffc2b",
+        "label": "Requirement"
+      },
+      "target": {
+        "id": "act-a8ce03319323904b",
+        "label": "Actor"
+      },
+      "type": "REQUESTED_BY"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "chk-202c7f98847e276d",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "req-c8625b22e934be3a",
+        "label": "Requirement"
+      },
+      "type": "SUPPORTS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "chk-9e31855f3c8b8ca8",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "req-3b1ddc6aee370cc7",
+        "label": "Requirement"
+      },
+      "type": "SUPPORTS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "chk-9e31855f3c8b8ca8",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "req-9355e7e726822797",
+        "label": "Requirement"
+      },
+      "type": "SUPPORTS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "chk-c5b123cf9e21984a",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "req-de8ecb7a42bffc2b",
+        "label": "Requirement"
+      },
+      "type": "SUPPORTS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "chk-e317d2f30be53bb4",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "req-9dc3db710289946e",
+        "label": "Requirement"
+      },
+      "type": "SUPPORTS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "chk-f7faa2ea1130ac73",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "req-72bbb881bec43307",
+        "label": "Requirement"
+      },
+      "type": "SUPPORTS"
+    },
+    {
+      "properties": {},
+      "source": {
+        "id": "chk-f7faa2ea1130ac73",
+        "label": "SourceChunk"
+      },
+      "target": {
+        "id": "req-d6f0dc9db697e655",
+        "label": "Requirement"
+      },
+      "type": "SUPPORTS"
+    }
+  ]
+}

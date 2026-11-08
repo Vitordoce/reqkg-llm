@@ -1,0 +1,68 @@
+# Configuração congelada do experimento. Alterar um valor depois do congelamento
+# (dia 9 do plano) exige registro em PROGRESS.md e nova corrida das duas condições.
+
+schema_version = "2"
+rules_version = "3"
+conditions = ["LLM-only", "REQKG-grounded"]
+metrics = [
+  "precision",
+  "recall",
+  "f1",
+  "bertscore_f1",
+  "completeness_ratio",
+  "provenance_coverage",
+  "unsupported_claim_rate",
+  "rule_violation_rate",
+]
+
+[model]
+# Decisão do autor em 13 de outubro de 2026: modelo de pesos abertos local pelo Ollama, sem custo.
+# qwen3:14b é a quantização Q4_K_M (14,8 B parâmetros, 9,3 GB). Não há tag instruct sem pensamento
+# no tamanho 14B; o cliente desliga o pensamento com think = false. O digest é o de /api/tags e
+# identifica os pesos: o cliente recusa rodar se o Ollama tiver outro.
+provider = "ollama"
+base_url = "http://localhost:11434"
+model_id = "qwen3:14b"
+model_digest = "bdbd181c33f2ed1b31c972991882db3cf4d192569092138a7d29e973cd9debe8"
+temperature = 0.0
+seed = 20261010
+# Janela do contexto: cabe a maior chamada do dry-run mais max_tokens, e o cache KV
+# (cerca de 160 KB por token neste modelo) cabe na memória com o Neo4j no ar.
+num_ctx = 16384
+max_tokens = 4096
+
+[chunking]
+strategy = "paragraph"
+size_chars = 1500
+overlap_chars = 0
+
+[extraction]
+# Valor inicial. Com chunk por parágrafo, cada chamada vê alguns parágrafos vizinhos.
+chunks_per_call = 6
+
+[retrieval]
+mode = "local"
+max_items = 30
+max_hops = 2
+
+[refinement]
+max_calls = 1
+
+[review]
+# Valor inicial. Candidato abaixo do limiar recebe low_confidence e vai para needs_review.
+confidence_threshold = 0.6
+
+[evaluation]
+# O BERTScore compara requisitos da amostra, em português. XLM-RoBERTa large é multilíngue
+# (100 línguas, português incluído), roda localmente e está na tabela de camadas do bert-score,
+# que indica a camada 17 para ele. O nome com a organização não está nessa tabela, por isso a
+# camada fica explícita.
+bertscore_model = "FacebookAI/xlm-roberta-large"
+# Commit do modelo no Hugging Face, para o mesmo modelo ser baixado sempre.
+bertscore_revision = "c23d21b0620b635a76227c604d44e43a9f0ee389"
+bertscore_num_layers = 17
+seed = 20261010
+
+[repetitions]
+structural_sample = 3
+promise = 1

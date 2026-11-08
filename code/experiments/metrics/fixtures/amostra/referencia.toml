@@ -1,0 +1,54 @@
+# Fixture sintético dos testes de métricas. Não é a amostra de referência.
+protocol_version = "1"
+
+[[artifact]]
+id = "a01"
+kind = "interview"
+title = "Entrevista sintética da estufa"
+
+[[artifact]]
+id = "a02"
+kind = "meeting_record"
+title = "Ata sintética da estufa"
+
+[[requirement]]
+id = "a01-R01"
+artifact = "a01"
+statement = "O sistema deve cadastrar cada bandeja semeada com a data de semeadura."
+type = "functional"
+quote = "toda bandeja semeada precisa ser cadastrada com a data de semeadura"
+priority = "must"
+priority_quote = "Isso é o essencial."
+
+[[requirement]]
+id = "a01-R02"
+artifact = "a01"
+statement = "A tela de cadastro deve abrir rapidamente no tablet."
+type = "non_functional"
+quote = "a tela de cadastro tem de abrir rápido no tablet"
+quality_attributes = ["performance"]
+
+[[requirement]]
+id = "a01-R03"
+artifact = "a01"
+statement = "O sistema deve alertar quando a umidade passar do limite."
+type = "functional"
+quote = "quero um alerta quando a umidade passar do limite"
+verification_method = "test"
+verification_quote = "Vamos testar com o sensor ligado na bancada."
+
+[[requirement]]
+id = "a02-R01"
+artifact = "a02"
+statement = "Os registros de semeadura devem ser guardados por dois anos."
+type = "constraint"
+quote = "os registros de semeadura devem ser guardados por dois anos"
+
+[[requirement]]
+id = "a02-R02"
+artifact = "a02"
+statement = "O sistema deve exportar relatório em planilha."
+type = "functional"
+quote = "exportar relatório em planilha"
+priority = "wont"
+priority_quote = "fica para a segunda versão"

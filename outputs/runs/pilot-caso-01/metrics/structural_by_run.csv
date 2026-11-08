@@ -1,0 +1,3 @@
+run_index,condition,cases,invalid_cases,generated,complete,completeness_ratio,c4,c4_rate,unsupported,unsupported_claim_rate,k_violations,rule_violation_rate,targets,accepted,refused,failed,corrected,foreign_evidence,refinement_calls,refinement_input_tokens,refinement_output_tokens,input_tokens_per_corrected,output_tokens_per_corrected,tokens_per_corrected,final_record_input_tokens,final_record_output_tokens
+0,LLM-only,12,5,17,3,0.176471,0,0.000000,0,0.000000,0,0.000000,17,14,2,1,3,0,17,27725,7828,9241.666667,2609.333333,11851.000000,27725,7828
+0,REQKG-grounded,12,5,17,5,0.294118,0,0.000000,0,0.000000,0,0.000000,17,11,6,0,5,0,17,37394,4312,7478.800000,862.400000,8341.200000,37394,4312

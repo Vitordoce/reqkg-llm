@@ -1,0 +1,131 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste do executor, não veio de modelo. Extração da entrevista sintética com chunks_per_call = 6 (uma chamada, quatro chunks). R4 recebe prioridade e método sem sinal no texto, de propósito, só para haver um candidato fora dos alvos de refinamento; não serve de exemplo de prompt. R5 cita um trecho que não está no chunk (P3, recusa W1). R6 não tem evidência (P1, recusa W1). A relação de R5 cai em W2.",
+  "response": {
+    "requirements": [
+      {
+        "key": "R1",
+        "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.9,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "o sistema tem de impedir duas reservas no mesmo horário"}
+        ]
+      },
+      {
+        "key": "R2",
+        "statement": "O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": ["performance"],
+        "quantitative_value": "5 min",
+        "review_flags": [],
+        "confidence": 0.8,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-f7faa2ea1130ac73", "quote": "O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence"}
+        ]
+      },
+      {
+        "key": "R3",
+        "statement": "A consulta da agenda deve ser rápida.",
+        "type": "non_functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": ["performance"],
+        "quantitative_value": null,
+        "review_flags": ["quantitative_value_pending"],
+        "confidence": 0.7,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-f7faa2ea1130ac73", "quote": "A consulta da agenda precisa ser rápida"}
+        ]
+      },
+      {
+        "key": "R4",
+        "statement": "Somente a coordenação pode cancelar a reserva de outra pessoa.",
+        "type": "functional",
+        "priority": "must",
+        "verification_method": "test",
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.9,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-202c7f98847e276d", "quote": "só a coordenação pode cancelar reserva de outra pessoa"}
+        ]
+      },
+      {
+        "key": "R5",
+        "statement": "O sistema deve guardar os dados de uso por cinco anos.",
+        "type": "constraint",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": "5 anos",
+        "review_flags": [],
+        "confidence": 0.8,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-202c7f98847e276d", "quote": "Os dados de uso ficam guardados por cinco anos"}
+        ]
+      },
+      {
+        "key": "R6",
+        "statement": "O sistema deve exportar um relatório mensal de uso dos equipamentos.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.5,
+        "rationale": null,
+        "origin": "system_inference",
+        "evidence": []
+      }
+    ],
+    "actors": [
+      {"key": "A1", "name": "Coordenadora do laboratório", "kind": "stakeholder",
+       "evidence": [
+         {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "Coordenadora do laboratório"},
+         {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-202c7f98847e276d", "quote": "Coordenadora do laboratório"}
+       ]},
+      {"key": "A2", "name": "Técnico", "kind": "user_role",
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-f7faa2ea1130ac73", "quote": "Técnico"}]}
+    ],
+    "components": [],
+    "entities": [
+      {"key": "E1", "name": "calibração", "entity_type": "evento", "description": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-f7faa2ea1130ac73", "quote": "calibração"}]},
+      {"key": "E2", "name": "reserva", "entity_type": "conceito", "description": null,
+       "evidence": [
+         {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "reserva dos equipamentos"},
+         {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-202c7f98847e276d", "quote": "cancelar reserva"}
+       ]}
+    ],
+    "relations": [
+      {"type": "requested_by", "source_key": "R1", "target_key": "A1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-9e31855f3c8b8ca8", "quote": "o sistema tem de impedir duas reservas no mesmo horário"}]},
+      {"type": "requested_by", "source_key": "R2", "target_key": "A2", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-f7faa2ea1130ac73", "quote": "O sistema deve enviar um aviso"}]},
+      {"type": "requested_by", "source_key": "R4", "target_key": "A1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-202c7f98847e276d", "quote": "só a coordenação pode cancelar reserva de outra pessoa"}]},
+      {"type": "requested_by", "source_key": "R5", "target_key": "A1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-202c7f98847e276d", "quote": "Os dados de uso ficam guardados"}]}
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "artifacts": {
+    "instancia_reqkg.json": "05f11fb1f2213cbf2c450fccacd0c471b167cc11b7b5bdc55e68f46153a4ec12",
+    "instancia_resumo.md": "39a0eb08f28c57f61460ccbf85225e265bbc5427c27cb0549a5e1621b87f0986",
+    "matriz_proveniencia.csv": "2f9d3f36abc32fcf285e3b407a1a17e7df5aec8f07c74c3d3b7b9a6d70f287b5",
+    "matriz_proveniencia.md": "3a5edc03364667c20ff437906e887e1a322ef995844887654c2ddd3971d6451a",
+    "relatorio_lacunas.md": "595c89960ed7718f71980e13fea045e996ac480af8aaf864b4d410e76c0b8cad",
+    "srs.md": "d0eef633f5d4f10d5abf5c2c245d3d702e903ba2e5b4fa1a1560ee2637aba95b"
+  },
+  "command": "PYTHONPATH=code .venv/bin/python -m deliverables pilot-caso-01 --condition REQKG-grounded --run-index 0 --name fprime-ccsds --ingestion data/raw/caso/caso_piloto.toml",
+  "inputs": {
+    "case_results": {
+      "path": "outputs/runs/pilot-caso-01/case_results.jsonl",
+      "sha256": "beb138fb26e66f1be8965b0f4bbb45f9e3f8d51fc5c5efc78aa1b0510c3663dc"
+    },
+    "config": {
+      "path": "code/experiments/config/experiment.toml",
+      "sha256": "43a48015ae13d15e742d4c1fa56694dd0a89b507ee5d26fd477d5839e48d806c"
+    },
+    "finals": {
+      "path": "outputs/runs/pilot-caso-01/finals.jsonl",
+      "sha256": "9f9e3aa077344356816ad884075b9a98408990663f89f83f79ac0609a7f5a03b"
+    },
+    "ingestion:data/raw/caso/caso_piloto.toml": {
+      "path": "data/raw/caso/caso_piloto.toml",
+      "sha256": "45ce02412f1aab1ad26541aa3094e3e36e78ce54d01ef6a328eb7247a13bb89d"
+    },
+    "manifest": {
+      "path": "outputs/runs/pilot-caso-01/manifest.json",
+      "sha256": "323a1c1f6205769a381d37599af8e1599ea31f4227e5e480c66b8497c63423f7"
+    },
+    "rejections": {
+      "path": "outputs/runs/pilot-caso-01/rejections.jsonl",
+      "sha256": "f0cee1f1248039a1235c13447c9bba0468ca104ac923c417b94c81647c5f47b6"
+    }
+  },
+  "selection": {
+    "cases": [
+      "src-10c1106f4b63ce65",
+      "src-19633f6a72a3da31",
+      "src-3dd53f82b418508a",
+      "src-70d9f10aa1b8a6c3",
+      "src-7945671485477302",
+      "src-974e951c733c8e7a",
+      "src-9cfd29d516561c4e",
+      "src-c9b8a83013558e6f",
+      "src-cf097721f7a993df",
+      "src-d1507de263dc69b8",
+      "src-e4ac13f99401393a",
+      "src-e8a2e7c2f903f103"
+    ],
+    "condition": "REQKG-grounded",
+    "run_id": "pilot-caso-01",
+    "run_index": 0
+  }
+}

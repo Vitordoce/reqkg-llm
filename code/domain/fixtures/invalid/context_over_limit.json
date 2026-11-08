@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "chunk_id": "chk-9e31855f3c8b8ca8",
+      "item_id": "req-9355e7e726822797",
+      "kind": "requirement",
+      "rank": 0,
+      "source_id": "src-3f478d516d9d807d",
+      "text": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário."
+    },
+    {
+      "chunk_id": "chk-9e31855f3c8b8ca8",
+      "item_id": "act-a8ce03319323904b",
+      "kind": "actor",
+      "rank": 1,
+      "source_id": "src-3f478d516d9d807d",
+      "text": "Coordenadora do laboratório"
+    },
+    {
+      "chunk_id": "chk-9e31855f3c8b8ca8",
+      "item_id": "chk-9e31855f3c8b8ca8",
+      "kind": "source_chunk",
+      "rank": 1,
+      "source_id": "src-3f478d516d9d807d",
+      "text": "Coordenadora do laboratório: hoje a reserva dos equipamentos é feita numa planilha compartilhada. Os técnicos precisam reservar um equipamento por horário e o sistema tem de impedir duas reservas no mesmo horário."
+    }
+  ],
+  "limit": 2,
+  "query": "completar req-9355e7e726822797",
+  "strategy": "graph_local"
+}

@@ -1,0 +1,26 @@
+{
+  "8b8736d728379128abe60f5dc8a3bb717906878e2b7ae2a364f90bdc4f79dec1": {
+    "file": "responses/entrevista_c0.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "entrevista_c0"
+  },
+  "d2b5f075be1cf217b62f14fbea7bc6ccfb1ce8acc730c051bebbaac0dc7b6424": {
+    "file": "responses/ata_c0.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "ata_c0"
+  },
+  "dcba743139cfe5f5c524c17260538bfa1e0f18f22fba8eb362594bdda03fa052": {
+    "file": "responses/descricao_c0_invalida.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "descricao_c0_invalida"
+  },
+  "e7885e1567397f66b5c7e92f01b771b443e42d6a53e8bcc2936513cdc4842426": {
+    "file": "responses/ata_c1.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "ata_c1"
+  }
+}

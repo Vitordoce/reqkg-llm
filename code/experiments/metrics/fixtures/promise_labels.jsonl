@@ -1,0 +1,10 @@
+{"promise_id":"PROMISE-NFR-9001","project_id":901,"text":"Synthetic test item. The system shall record each seeded tray.","label":"F","label_name":"Functional","is_functional":true}
+{"promise_id":"PROMISE-NFR-9002","project_id":901,"text":"Synthetic test item. The system shall print a tray label.","label":"F","label_name":"Functional","is_functional":true}
+{"promise_id":"PROMISE-NFR-9003","project_id":901,"text":"Synthetic test item. The system shall let the manager reset a password.","label":"F","label_name":"Functional","is_functional":true}
+{"promise_id":"PROMISE-NFR-9004","project_id":901,"text":"Synthetic test item. Only the manager shall delete trays.","label":"SE","label_name":"Security","is_functional":false}
+{"promise_id":"PROMISE-NFR-9005","project_id":901,"text":"Synthetic test item. Passwords shall be stored encrypted.","label":"SE","label_name":"Security","is_functional":false}
+{"promise_id":"PROMISE-NFR-9006","project_id":902,"text":"Synthetic test item. The tray list shall load in two seconds.","label":"PE","label_name":"Performance","is_functional":false}
+{"promise_id":"PROMISE-NFR-9007","project_id":902,"text":"Synthetic test item. A new technician shall learn the screen in one day.","label":"US","label_name":"Usability","is_functional":false}
+{"promise_id":"PROMISE-NFR-9008","project_id":902,"text":"Synthetic test item. Buttons shall be large enough for gloved hands.","label":"US","label_name":"Usability","is_functional":false}
+{"promise_id":"PROMISE-NFR-9009","project_id":902,"text":"Synthetic test item. The system shall run on the old greenhouse tablet.","label":"PO","label_name":"Portability","is_functional":false}
+{"promise_id":"PROMISE-NFR-9010","project_id":902,"text":"Synthetic test item. The system shall run during the night shift.","label":"O","label_name":"Operational","is_functional":false}

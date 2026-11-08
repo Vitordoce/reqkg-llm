@@ -1,0 +1,15 @@
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"requisito sem evidência que resolve","rule_id":"W1","subject":"c1-R2"},"run_index":0}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"c1-R2 ou c1-A1 não foi gravado","rule_id":"W2","subject":"relations.6"},"run_index":0}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"c1-R2 ou c1-A2 não foi gravado","rule_id":"W2","subject":"relations.7"},"run_index":0}
+{"case_id":"src-6a0825aed64fa5f0","rejection":{"detail":"'Médico especialista da central' já gravado como user_role","rule_id":"W4","subject":"c1-A1"},"run_index":0}
+{"case_id":"src-9475d9940ecbf40f","rejection":{"detail":"entidade sem evidência que resolve","rule_id":"W1","subject":"c1-E2"},"run_index":0}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"requisito sem evidência que resolve","rule_id":"W1","subject":"c1-R2"},"run_index":1}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"c1-R2 ou c1-A1 não foi gravado","rule_id":"W2","subject":"relations.6"},"run_index":1}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"c1-R2 ou c1-A2 não foi gravado","rule_id":"W2","subject":"relations.7"},"run_index":1}
+{"case_id":"src-6a0825aed64fa5f0","rejection":{"detail":"'Médico especialista da central' já gravado como user_role","rule_id":"W4","subject":"c1-A1"},"run_index":1}
+{"case_id":"src-9475d9940ecbf40f","rejection":{"detail":"entidade sem evidência que resolve","rule_id":"W1","subject":"c1-E2"},"run_index":1}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"requisito sem evidência que resolve","rule_id":"W1","subject":"c1-R2"},"run_index":2}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"c1-R2 ou c1-A1 não foi gravado","rule_id":"W2","subject":"relations.6"},"run_index":2}
+{"case_id":"src-213683c0ce9c1b28","rejection":{"detail":"c1-R2 ou c1-A2 não foi gravado","rule_id":"W2","subject":"relations.7"},"run_index":2}
+{"case_id":"src-6a0825aed64fa5f0","rejection":{"detail":"'Médico especialista da central' já gravado como user_role","rule_id":"W4","subject":"c1-A1"},"run_index":2}
+{"case_id":"src-9475d9940ecbf40f","rejection":{"detail":"entidade sem evidência que resolve","rule_id":"W1","subject":"c1-E2"},"run_index":2}

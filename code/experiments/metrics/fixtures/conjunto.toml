@@ -1,0 +1,11 @@
+# Conjunto sintético dos testes de métricas. Só os artefatos de fixtures/amostra/.
+
+[[document]]
+path = "code/experiments/metrics/fixtures/amostra/a01.txt"
+kind = "interview"
+title = "Entrevista sintética da estufa"
+
+[[document]]
+path = "code/experiments/metrics/fixtures/amostra/a02.txt"
+kind = "meeting_record"
+title = "Ata sintética da estufa"

@@ -1,0 +1,72 @@
+[
+  [
+    "C1",
+    "R2",
+    "priority ausente"
+  ],
+  [
+    "C2",
+    "R2",
+    "verification_method ausente"
+  ],
+  [
+    "C3",
+    "R5",
+    "type ausente"
+  ],
+  [
+    "C4",
+    "R2",
+    "não funcional sem atributo de qualidade"
+  ],
+  [
+    "K1",
+    "R1|R4",
+    "conflicts_with e duplicates no mesmo par"
+  ],
+  [
+    "K2",
+    "relations.4",
+    "refines de R2 para ele mesmo"
+  ],
+  [
+    "K3",
+    "R1,R3",
+    "ciclo em depends_on"
+  ],
+  [
+    "K4",
+    "R1,R5",
+    "ciclo em refines"
+  ],
+  [
+    "K5",
+    "R1->R3",
+    "must depende de wont"
+  ],
+  [
+    "P1",
+    "R3",
+    "sem evidência"
+  ],
+  [
+    "P2",
+    "R4",
+    "src-3f478d516d9d807d/chk-321cae8960527a2d não existe no corpus"
+  ],
+  [
+    "P3",
+    "R2",
+    "citação não aparece em chk-f7faa2ea1130ac73"
+  ],
+  [
+    "P4",
+    "R4",
+    "fato extraído sem citação"
+  ],
+  [
+    "P5",
+    "relations.2",
+    "depends_on sem evidência"
+  ]
+]

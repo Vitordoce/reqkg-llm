@@ -1,0 +1,5 @@
+Artefato sintético de teste do validador da amostra. Não descreve sistema real.
+
+Encarregado da oficina: cada ferramenta retirada precisa ficar registrada com o nome de quem retirou. Sem isso não tem sistema.
+
+Aluno monitor: o aplicativo tem de ser simples de usar no celular. Seria bom também mandar um lembrete quando a ferramenta passar de uma semana fora.

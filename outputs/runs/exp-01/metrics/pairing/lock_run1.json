@@ -1,0 +1,10 @@
+{
+ "decided_none": 0,
+ "format": "reqkg-pairing-lock/1",
+ "items": 43,
+ "locked_at": "2026-10-24T04:44:17+00:00",
+ "run_id": "exp-01",
+ "run_index": 1,
+ "sheet": "sheet_run1.toml",
+ "sheet_sha256": "ae8cf623c15899592730fcc5ed5f4a864254b056fb8c4a20fb3613c2664af508"
+}

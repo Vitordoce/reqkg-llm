@@ -1,0 +1,4 @@
+{"case_id":"src-70d9f10aa1b8a6c3","rejection":{"detail":"entidade sem evidência que resolve","rule_id":"W1","subject":"c0-E11"},"run_index":0}
+{"case_id":"src-70d9f10aa1b8a6c3","rejection":{"detail":"entidade sem evidência que resolve","rule_id":"W1","subject":"c0-E2"},"run_index":0}
+{"case_id":"src-70d9f10aa1b8a6c3","rejection":{"detail":"entidade sem evidência que resolve","rule_id":"W1","subject":"c0-E6"},"run_index":0}
+{"case_id":"src-7945671485477302","rejection":{"detail":"componente sem evidência que resolve","rule_id":"W1","subject":"c0-C1"},"run_index":0}

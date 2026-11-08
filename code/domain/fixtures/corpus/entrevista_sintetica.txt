@@ -1,0 +1,7 @@
+Entrevista sintética de desenvolvimento. Texto escrito para testar o contrato. Não descreve um sistema real nem o estudo de caso.
+
+Coordenadora do laboratório: hoje a reserva dos equipamentos é feita numa planilha compartilhada. Os técnicos precisam reservar um equipamento por horário e o sistema tem de impedir duas reservas no mesmo horário.
+
+Técnico: quando o equipamento sai de calibração, alguém precisa avisar. O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence. A consulta da agenda precisa ser rápida.
+
+Coordenadora do laboratório: só a coordenação pode cancelar reserva de outra pessoa. Os dados de uso ficam guardados por dois anos para auditoria.

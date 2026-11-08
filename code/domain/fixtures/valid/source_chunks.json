@@ -1,0 +1,42 @@
+[
+  {
+    "char_end": 129,
+    "char_start": 0,
+    "chunk_id": "chk-fb10eaa327ae4290",
+    "index": 0,
+    "occurrence": 0,
+    "sha256": "24424e3a0040275bda81adafc58389c3377ad16658fb3c794622544b9d28553f",
+    "source_id": "src-3f478d516d9d807d",
+    "text": "Entrevista sintética de desenvolvimento. Texto escrito para testar o contrato. Não descreve um sistema real nem o estudo de caso."
+  },
+  {
+    "char_end": 344,
+    "char_start": 131,
+    "chunk_id": "chk-9e31855f3c8b8ca8",
+    "index": 1,
+    "occurrence": 0,
+    "sha256": "3238a5f7639593eba0a1f6d1ba3841f2f13f272c8ef29c0933e990bdc821f479",
+    "source_id": "src-3f478d516d9d807d",
+    "text": "Coordenadora do laboratório: hoje a reserva dos equipamentos é feita numa planilha compartilhada. Os técnicos precisam reservar um equipamento por horário e o sistema tem de impedir duas reservas no mesmo horário."
+  },
+  {
+    "char_end": 556,
+    "char_start": 346,
+    "chunk_id": "chk-f7faa2ea1130ac73",
+    "index": 2,
+    "occurrence": 0,
+    "sha256": "ae72a5b7b9745fd5cb4b7a8a0fd2a139711dfc9ae3cee4254015d598bb4a810a",
+    "source_id": "src-3f478d516d9d807d",
+    "text": "Técnico: quando o equipamento sai de calibração, alguém precisa avisar. O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence. A consulta da agenda precisa ser rápida."
+  },
+  {
+    "char_end": 704,
+    "char_start": 558,
+    "chunk_id": "chk-202c7f98847e276d",
+    "index": 3,
+    "occurrence": 0,
+    "sha256": "bd21e0ae36aa64d30a2e7e53013c38545673ecc47e2a9d0b62b89da6a761298e",
+    "source_id": "src-3f478d516d9d807d",
+    "text": "Coordenadora do laboratório: só a coordenação pode cancelar reserva de outra pessoa. Os dados de uso ficam guardados por dois anos para auditoria."
+  }
+]

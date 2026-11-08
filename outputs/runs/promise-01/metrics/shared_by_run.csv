@@ -1,0 +1,2 @@
+run_index,extraction_calls,extraction_input_tokens,extraction_output_tokens,promise_extraction_calls,promise_extraction_input_tokens,promise_extraction_output_tokens,classification_calls,classification_input_tokens,classification_output_tokens,calls_without_usage,rejections,rejections_by_rule
+0,0,0,0,84,245757,169321,625,399732,17104,0,2,W1=2

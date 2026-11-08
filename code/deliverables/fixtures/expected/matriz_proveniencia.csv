@@ -1,0 +1,11 @@
+requisito,requirement_id,caso,chave,documento,caminho,source_id,chunk_id,indice_chunk,citacao,citacao_no_chunk
+REQ-001,req-3b1ddc6aee370cc7,src-3f478d516d9d807d,c0-R1,D1,code/domain/fixtures/corpus/entrevista_sintetica.txt,src-3f478d516d9d807d,chk-9e31855f3c8b8ca8,1,Os técnicos precisam reservar um equipamento por horário,sim
+REQ-002,req-9355e7e726822797,src-3f478d516d9d807d,c0-R2,D1,code/domain/fixtures/corpus/entrevista_sintetica.txt,src-3f478d516d9d807d,chk-9e31855f3c8b8ca8,1,o sistema tem de impedir duas reservas no mesmo horário,sim
+REQ-003,req-72bbb881bec43307,src-3f478d516d9d807d,c0-R3,D1,code/domain/fixtures/corpus/entrevista_sintetica.txt,src-3f478d516d9d807d,chk-f7faa2ea1130ac73,2,O sistema deve enviar um aviso ao responsável em até cinco minutos depois que a calibração vence,sim
+REQ-004,req-d6f0dc9db697e655,src-3f478d516d9d807d,c0-R4,D1,code/domain/fixtures/corpus/entrevista_sintetica.txt,src-3f478d516d9d807d,chk-f7faa2ea1130ac73,2,A consulta da agenda precisa ser rápida,sim
+REQ-005,req-c8625b22e934be3a,src-3f478d516d9d807d,c0-R5,D1,code/domain/fixtures/corpus/entrevista_sintetica.txt,src-3f478d516d9d807d,chk-202c7f98847e276d,3,só a coordenação pode cancelar reserva de outra pessoa,sim
+REQ-006,,src-3f478d516d9d807d,c0-R6,D1,code/domain/fixtures/corpus/entrevista_sintetica.txt,src-3f478d516d9d807d,chk-202c7f98847e276d,3,Os dados de uso ficam armazenados por dois anos,não
+REQ-007,req-de8ecb7a42bffc2b,src-339ed9b9a545ccbc,c1-R1,D2,code/ingestion/fixtures/ata_sintetica.md,src-339ed9b9a545ccbc,chk-c5b123cf9e21984a,6,Ela pediu que o sistema novo recuse a segunda reserva e mostre quem já reservou,sim
+REQ-008,req-9dc3db710289946e,src-339ed9b9a545ccbc,c1-R2,D2,code/ingestion/fixtures/ata_sintetica.md,src-339ed9b9a545ccbc,chk-e317d2f30be53bb4,7,"Ele quer o aviso no próprio sistema, no mesmo dia do vencimento",sim
+REQ-009,,src-3f478d516d9d807d,c0-R7,,,src-339ed9b9a545ccbc,chk-3ebce0a3871c0412,,A coordenação vai listar os equipamentos que exigem calibração,chunk fora do corpus do caso
+REQ-010,,src-3f478d516d9d807d,c0-R8,,,,,,,sem evidência

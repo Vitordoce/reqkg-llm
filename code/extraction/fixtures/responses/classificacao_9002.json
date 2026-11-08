@@ -1,0 +1,10 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste, não veio de modelo. Item sintético, não é do PROMISE.",
+  "response": {
+    "promise_id": "PROMISE-NFR-9002",
+    "label": "PE",
+    "rationale": "Fixa o tempo de abertura do calendário; a rede do laboratório descreve o ambiente, não a exigência.",
+    "used_context_ids": []
+  }
+}

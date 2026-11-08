@@ -1,0 +1,174 @@
+# Conjunto de ingestão do estudo de caso: F´ (NASA/JPL), subconjunto Svc/Ccsds
+# Repositório: https://github.com/nasa/fprime (commit fd0ef09c177dc4fd8070d2c3576da1a4a426873a, Apache-2.0)
+# As seções ## Requirements foram extraídas para data/raw/caso/referencia/ antes da ingestão.
+# Autores de issues e discussões foram pseudonimizados (stakeholder-NN).
+
+[[document]]
+path = "data/raw/caso/sdd/AesGcmDecryptor.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::AesGcmDecryptor SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/AesGcmEncryptor.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::AesGcmEncryptor SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/AosDeframer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::AosDeframer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/AosFramer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::AosFramer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/ApidManager.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::ApidManager SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/CcsdsSdlsDeframer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::CcsdsSdlsDeframer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/CcsdsSdlsFramer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::CcsdsSdlsFramer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/CfdpManager.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::CfdpManager SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/ClearTextDecryptor.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::ClearTextDecryptor SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/ClearTextEncryptor.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::ClearTextEncryptor SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/SdlsFileKeyManager.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::SdlsFileKeyManager SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/SdlsSaRouter.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::SdlsSaRouter SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/SpacePacketDeframer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::SpacePacketDeframer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/SpacePacketFramer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::SpacePacketFramer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/TcDeframer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::TcDeframer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/TmFramer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::TmFramer SDD"
+
+[[document]]
+path = "data/raw/caso/issues/issue_2768.md"
+kind = "meeting_record"
+title = "F Prime Issue #2768: Implement CCSDS File Delivery Protocol"
+
+[[document]]
+path = "data/raw/caso/issues/issue_3491.md"
+kind = "meeting_record"
+title = "F Prime Issue #3491: Add CCSDS Uplink (TC-SpacePacket) protocols"
+
+[[document]]
+path = "data/raw/caso/issues/issue_3492.md"
+kind = "meeting_record"
+title = "F Prime Issue #3492: Add CCSDS Downlink (TM-SpacePacket) protocols"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5114.md"
+kind = "meeting_record"
+title = "F Prime Issue #5114: Add support for CCSDS security protocol (encryption/authentication)"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5485.md"
+kind = "meeting_record"
+title = "F Prime Issue #5485: Multiplex Space Packets across TM/AOS for downlink efficiency"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5574.md"
+kind = "meeting_record"
+title = "F Prime Issue #5574: CfdpManager: support files larger than 4 GiB"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5577.md"
+kind = "meeting_record"
+title = "F Prime Issue #5577: CfdpManager: support running the sched call at a rate other than 1 Hz"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5578.md"
+kind = "meeting_record"
+title = "F Prime Issue #5578: CfdpManager: support partial file transmission"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5579.md"
+kind = "meeting_record"
+title = "F Prime Issue #5579: CfdpManager: add TLV support for Metadata PDU options and Finished PDU filestore responses"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5583.md"
+kind = "meeting_record"
+title = "F Prime Issue #5583: CfdpManager: harden receive path (sandbox file paths, zero-size files, offset validation) — follow-up to #5138"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5804.md"
+kind = "meeting_record"
+title = "F Prime Issue #5804: SDLS: default ClearText decryptor remains routable alongside a project decryptor; null cipher use is silent; downlink SA follows frame context"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5835.md"
+kind = "meeting_record"
+title = "F Prime Issue #5835: Add Replay-Attack Prevention to AESGsmEncryptor/Decryptor"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5886.md"
+kind = "meeting_record"
+title = "F Prime Issue #5886: Svc/Ccsds/AosFramer,AosDeframer: M_PDU First Header Pointer special values are not CCSDS 732.0-B conformant"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5926.md"
+kind = "meeting_record"
+title = "F Prime Issue #5926: Have TcDeframer dispatch based on VCID"
+
+[[document]]
+path = "data/raw/caso/discussions/discussion_2507.md"
+kind = "meeting_record"
+title = "F Prime Discussion #2507: Should FPrime be made CCSDS-compliant?"
+
+[[document]]
+path = "data/raw/caso/discussions/discussion_4030.md"
+kind = "meeting_record"
+title = "F Prime Discussion #4030: Make APID use in CCSDS telemetry/DPs match up more closely with ground systems."
+
+[[document]]
+path = "data/raw/caso/discussions/discussion_4390.md"
+kind = "meeting_record"
+title = "F Prime Discussion #4390: Add file validator/dispatcher component"
+
+[[document]]
+path = "data/raw/caso/discussions/discussion_5027.md"
+kind = "meeting_record"
+title = "F Prime Discussion #5027: Improvemtents to CCSDS In F Prime"

@@ -1,0 +1,37 @@
+# Svc::Ccsds::SpacePacketDeframer
+
+The `Svc::Ccsds::SpacePacketDeframer` is an implementation of the [DeframerInterface](../../../Interfaces/docs/sdd.md) for the CCSDS [Space Packet Protocol](https://ccsds.org/Pubs/133x0b2e2.pdf).
+
+It receives data containing a Space Packet on its input port and extracts the Space Packet. Please refer to the CCSDS [Space Packet Protocol specification (CCSDS 133.0-B-2)](https://ccsds.org/Pubs/133x0b2e2.pdf) for details on the packet format.
+
+The `Svc::Ccsds::SpacePacketDeframer` is typically used downstream of a component that removes transfer frame headers, such as the `Svc::Ccsds::TcDeframer`. It validates the Space Packet header and extracts the payload.
+
+## CCSDS Header Field Extraction
+
+The `Svc::Ccsds::SpacePacketDeframer` extracts the following fields from the CCSDS Space Packet Primary Header and populates them in the output `FrameContext`:
+
+| Field | Context Field | Description |
+|---|---|---|
+| Application Process Identifier (APID) | `apid` | Extracted from bits [10:0] of the Packet Identification field. Invalid APID values (per `ComCfg::Apid::isValid()`) are mapped to `INVALID_UNINITIALIZED`. |
+| Secondary Header Flag | `hasSecHdr` | Extracted from bit [11] of the Packet Identification field |
+| Packet Type | `pktType` | Extracted from bit [12] of the Packet Identification field (0=Telemetry, 1=Command). Propagated only; routing is by APID and the type bit is not validated against it. |
+| Sequence Flags | `sequenceFlags` | Extracted from bits [15:14] of the Packet Sequence Control field (0b00=Continuation, 0b01=First, 0b10=Last, 0b11=Unsegmented) |
+| Packet Sequence Count | `sequenceCount` | Extracted from bits [13:0] of the Packet Sequence Control field |
+
+## Port Descriptions
+
+| Kind | Name | Port Type | Description |
+|---|---|---|---|
+| Input (guarded) | dataIn | Svc.ComDataWithContext | Port to receive data containing a Space Packet |
+| Output | dataOut | Svc.ComDataWithContext | Port to output the extracted Space Packet payload |
+| Output | dataReturnOut | Svc.ComDataWithContext | Port for returning ownership of received buffers |
+| Input (sync) | dataReturnIn | Svc.ComDataWithContext | Port receiving back ownership of sent buffers |
+| Output | validateApidSeqCount | Ccsds.ApidSequenceCount | Port to request validation of a sequence count for a given APID |
+| Output | errorNotify | Ccsds.ErrorNotify | Port to send notification of deframing errors |
+
+## Events
+
+| Name | Severity | Description |
+|---|---|---|
+| InvalidLength | `warning high` | Deframing received an invalid packet length |
+| InvalidPacket | `warning high` | Deframing received a malformed packet |

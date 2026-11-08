@@ -1,0 +1,19 @@
+protocol_version = "1"
+
+[[artifact]]
+id = "a01"
+kind = "interview"
+title = "Entrevista de teste"
+
+[[requirement]]
+id = "a01-R01"
+artifact = "a01"
+statement = "O sistema deve registrar cada retirada de ferramenta."
+type = "functional"
+quote = "cada ferramenta retirada precisa ficar registrada"
+
+[[relation]]
+type = "depends_on"
+source = "a01-R01"
+target = "a01-R07"
+quote = "Sem isso não tem sistema."

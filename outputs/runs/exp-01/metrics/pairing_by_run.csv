@@ -1,0 +1,7 @@
+run_index,condition,generated,references,paired,generated_unpaired,unpaired_no_candidates,unpaired_decided_none,unpaired_duplicate,references_unpaired,covered,provenance_coverage,provenance_coverage_of_references,bertscore_f1
+0,LLM-only,43,54,42,1,0,0,1,12,42,1.000000,0.777778,0.961584
+0,REQKG-grounded,43,54,42,1,0,0,1,12,42,1.000000,0.777778,0.961584
+1,LLM-only,43,54,42,1,0,0,1,12,42,1.000000,0.777778,0.961584
+1,REQKG-grounded,43,54,42,1,0,0,1,12,42,1.000000,0.777778,0.961584
+2,LLM-only,43,54,42,1,0,0,1,12,42,1.000000,0.777778,0.961584
+2,REQKG-grounded,43,54,42,1,0,0,1,12,42,1.000000,0.777778,0.961584

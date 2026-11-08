@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "note": "Frases sintéticas de desenvolvimento, escritas para este teste. Nenhuma vem do PROMISE NFR. Os identificadores usam a faixa PROMISE-NFR-9xxx, que não existe no PROMISE (625 itens), só porque ClassificationOutput exige esse formato. dev_label é o rótulo que o autor do fixture daria e serve só para o teste; ele nunca entra em prompt.",
+  "project": "laboratorio-sintetico",
+  "items": [
+    {"promise_id": "PROMISE-NFR-9001", "text": "The system shall let a technician book an instrument for a chosen time slot.", "dev_label": "F"},
+    {"promise_id": "PROMISE-NFR-9002", "text": "The booking calendar shall open in less than two seconds for any user on the laboratory network.", "dev_label": "PE"},
+    {"promise_id": "PROMISE-NFR-9003", "text": "Only the lab coordinator shall be able to cancel a booking made by another user.", "dev_label": "SE"},
+    {"promise_id": "PROMISE-NFR-9004", "text": "The booking screens shall follow the visual identity guide of the laboratory.", "dev_label": "LF"}
+  ]
+}

@@ -1,0 +1,30 @@
+protocol_version = "1"
+
+[[artifact]]
+id = "a01"
+kind = "interview"
+title = "Entrevista de teste"
+
+[[requirement]]
+id = "a01-R01"
+artifact = "a01"
+statement = "O sistema deve registrar cada retirada de ferramenta."
+type = "functional"
+quote = "cada ferramenta retirada precisa ficar registrada"
+priority = "must"
+priority_quote = "Sem isso não tem sistema."
+
+[[requirement]]
+id = "a01-R02"
+artifact = "a01"
+statement = "O sistema deve lembrar quem está com uma ferramenta há mais de uma semana."
+type = "functional"
+quote = "mandar um lembrete quando a ferramenta passar de uma semana fora"
+priority = "wont"
+priority_quote = "Seria bom também"
+
+[[relation]]
+type = "depends_on"
+source = "a01-R01"
+target = "a01-R02"
+quote = "o aplicativo tem de ser simples"

@@ -1,0 +1,17 @@
+# Conjunto de desenvolvimento da ingestão. Só textos sintéticos, marcados na primeira linha.
+# Nunca listar aqui PROMISE, amostra anotada ou corpus do estudo de caso.
+
+[[document]]
+path = "code/domain/fixtures/corpus/entrevista_sintetica.txt"
+kind = "interview"
+title = "Entrevista sintética de desenvolvimento"
+
+[[document]]
+path = "code/ingestion/fixtures/ata_sintetica.md"
+kind = "meeting_record"
+title = "Ata sintética da reunião de acompanhamento"
+
+[[document]]
+path = "code/ingestion/fixtures/descricao_sintetica.txt"
+kind = "existing_system_description"
+title = "Descrição sintética do processo atual"

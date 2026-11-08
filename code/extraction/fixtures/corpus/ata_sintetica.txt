@@ -1,0 +1,5 @@
+Ata sintética de desenvolvimento. Texto escrito para testar a extração com evidência inventada. Não descreve um sistema real nem o estudo de caso.
+
+Gerente de operações: o painel de ensaios tem de mostrar o estado de cada bancada. A exportação do relatório diário em PDF seria útil.
+
+Analista de qualidade: os registros de ensaio não podem ser apagados por operadores.

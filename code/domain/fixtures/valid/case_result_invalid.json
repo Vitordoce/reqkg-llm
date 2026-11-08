@@ -1,0 +1,7 @@
+{
+  "case_id": "fixture-entrevista",
+  "error": "relations.0.target_key: 'A9' não é actor",
+  "run_index": 1,
+  "stage": "extraction",
+  "status": "invalid_output"
+}

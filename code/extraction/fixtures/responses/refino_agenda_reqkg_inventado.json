@@ -1,0 +1,25 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste, não veio de modelo. Refinamento de c1-R2 com um contexto de grafo escrito à mão. A resposta inventa prazo de dois segundos, prioridade e método, cita um chunk fora do contexto (G3) e um item de contexto que não existe (G2). O sistema recusa e mantém o original.",
+  "response": {
+    "target_key": "c1-R2",
+    "revised": {
+      "key": "c1-R2",
+      "statement": "A consulta da agenda deve responder em até dois segundos.",
+      "type": "non_functional",
+      "priority": "must",
+      "verification_method": "test",
+      "quality_attributes": ["performance"],
+      "quantitative_value": "2 s",
+      "review_flags": [],
+      "confidence": 0.9,
+      "rationale": null,
+      "origin": "extracted_fact",
+      "evidence": [
+        {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-f7faa2ea1130ac73", "quote": "A consulta da agenda precisa ser rápida"},
+        {"source_id": "src-3f478d516d9d807d", "chunk_id": "chk-202c7f98847e276d", "quote": "só a coordenação pode cancelar reserva de outra pessoa"}
+      ]
+    },
+    "used_context_ids": ["chk-f7faa2ea1130ac73", "req-0000000000000000"]
+  }
+}

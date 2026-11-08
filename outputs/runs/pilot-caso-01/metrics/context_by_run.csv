@@ -1,0 +1,7 @@
+run_index,condition,stratum,targets,targets_without_context,items_mean,items_median,items_max,chars_mean,chars_median,chars_max
+0,LLM-only,all,17,0,5.705882,6.000000,6.000000,1025.176471,642.000000,1763.000000
+0,LLM-only,written,17,0,5.705882,6.000000,6.000000,1025.176471,642.000000,1763.000000
+0,LLM-only,rejected_w,0,0,,,,,,
+0,REQKG-grounded,all,17,0,11.588235,10.000000,16.000000,1592.705882,1591.000000,2034.000000
+0,REQKG-grounded,written,17,0,11.588235,10.000000,16.000000,1592.705882,1591.000000,2034.000000
+0,REQKG-grounded,rejected_w,0,0,,,,,,

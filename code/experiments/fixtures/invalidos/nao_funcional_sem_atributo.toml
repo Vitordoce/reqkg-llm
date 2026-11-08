@@ -1,0 +1,13 @@
+protocol_version = "1"
+
+[[artifact]]
+id = "a01"
+kind = "interview"
+title = "Entrevista de teste"
+
+[[requirement]]
+id = "a01-R01"
+artifact = "a01"
+statement = "O aplicativo deve ser simples de usar no celular."
+type = "non_functional"
+quote = "o aplicativo tem de ser simples de usar no celular"

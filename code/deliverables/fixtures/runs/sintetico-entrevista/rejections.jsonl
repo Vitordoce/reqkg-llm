@@ -1,0 +1,6 @@
+{"case_id":"src-3f478d516d9d807d","rejection":{"detail":"requisito sem evidência que resolve","rule_id":"W1","subject":"c0-R6"},"run_index":0}
+{"case_id":"src-3f478d516d9d807d","rejection":{"detail":"requisito sem evidência que resolve","rule_id":"W1","subject":"c0-R7"},"run_index":0}
+{"case_id":"src-3f478d516d9d807d","rejection":{"detail":"requisito sem evidência que resolve","rule_id":"W1","subject":"c0-R8"},"run_index":0}
+{"case_id":"src-3f478d516d9d807d","rejection":{"detail":"c0-R6 ou c0-A1 não foi gravado","rule_id":"W2","subject":"relations.5"},"run_index":0}
+{"case_id":"src-3f478d516d9d807d","rejection":{"detail":"allocated_to sem evidência que resolve","rule_id":"W3","subject":"relations.6"},"run_index":0}
+{"case_id":"src-3f478d516d9d807d","rejection":{"detail":"'técnico' já gravado como user_role","rule_id":"W4","subject":"c0-A3"},"run_index":0}

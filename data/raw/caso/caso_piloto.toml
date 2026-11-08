@@ -1,0 +1,63 @@
+# Subconjunto representativo do estudo de caso: F´ (NASA/JPL) — Svc/Ccsds (Pipeline Core + SDLS + Stakeholders)
+# Seleciona os 6 componentes centrais da cadeia de telemetria/telecomando e segurança SDLS
+# (59 requisitos oficiais de referência) mais 4 issues e 2 discussões dos stakeholders.
+
+[[document]]
+path = "data/raw/caso/sdd/ApidManager.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::ApidManager SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/SpacePacketDeframer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::SpacePacketDeframer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/SpacePacketFramer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::SpacePacketFramer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/TcDeframer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::TcDeframer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/TmFramer.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::TmFramer SDD"
+
+[[document]]
+path = "data/raw/caso/sdd/AesGcmDecryptor.md"
+kind = "existing_system_description"
+title = "F Prime Svc::Ccsds::AesGcmDecryptor SDD"
+
+[[document]]
+path = "data/raw/caso/issues/issue_3491.md"
+kind = "meeting_record"
+title = "F Prime Issue #3491: Add CCSDS Uplink (TC-SpacePacket) protocols"
+
+[[document]]
+path = "data/raw/caso/issues/issue_3492.md"
+kind = "meeting_record"
+title = "F Prime Issue #3492: Add CCSDS Downlink (TM-SpacePacket) protocols"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5114.md"
+kind = "meeting_record"
+title = "F Prime Issue #5114: Add support for CCSDS security protocol (encryption/authentication)"
+
+[[document]]
+path = "data/raw/caso/issues/issue_5485.md"
+kind = "meeting_record"
+title = "F Prime Issue #5485: Multiplex Space Packets across TM/AOS for downlink efficiency"
+
+[[document]]
+path = "data/raw/caso/discussions/discussion_4030.md"
+kind = "meeting_record"
+title = "F Prime Discussion #4030: Make APID use in CCSDS telemetry/DPs match up more closely with ground systems."
+
+[[document]]
+path = "data/raw/caso/discussions/discussion_5027.md"
+kind = "meeting_record"
+title = "F Prime Discussion #5027: Improvemtents to CCSDS In F Prime"

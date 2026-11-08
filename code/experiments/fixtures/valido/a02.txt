@@ -1,0 +1,5 @@
+Artefato sintético de teste do validador da amostra. Não descreve sistema real.
+
+Ata da reunião da oficina. Ficou decidido que o lembrete por mensagem fica para a segunda versão.
+
+O lembrete depende do registro de retirada. Os registros devem ser guardados por um ano. O auditor da escola vai conferir o relatório de retiradas no fim do semestre.

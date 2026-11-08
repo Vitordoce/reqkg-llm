@@ -1,0 +1,9 @@
+Artefato sintético de teste das métricas. Não descreve sistema nem pessoa real.
+
+Gerente da estufa: toda bandeja semeada precisa ser cadastrada com a data de semeadura. Isso é o essencial.
+
+Técnica: a tela de cadastro tem de abrir rápido no tablet.
+
+Gerente da estufa: quero um alerta quando a umidade passar do limite. Vamos testar com o sensor ligado na bancada.
+
+Técnica: hoje a gente anota tudo num caderno, e os registros de semeadura ficam guardados por dois anos.

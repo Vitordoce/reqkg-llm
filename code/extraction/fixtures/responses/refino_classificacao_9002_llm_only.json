@@ -1,0 +1,5 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste, não veio de modelo. Refinamento da classificação sem contexto (condição LLM-only).",
+  "response": {"promise_id": "PROMISE-NFR-9002", "label": "PE", "rationale": null, "used_context_ids": []}
+}

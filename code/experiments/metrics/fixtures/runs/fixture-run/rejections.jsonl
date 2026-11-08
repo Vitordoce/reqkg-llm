@@ -1,0 +1,13 @@
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c1-R2"},"run_index":0}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c2-R1"},"run_index":0}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c0-A1"},"run_index":0}
+{"case_id":"a02","rejection":{"detail":"sintético","rule_id":"W1","subject":"c1-R3"},"run_index":0}
+{"case_id":"a02","rejection":{"detail":"sintético","rule_id":"W5","subject":"relations.2"},"run_index":0}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c1-R2"},"run_index":1}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c2-R1"},"run_index":1}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c0-A1"},"run_index":1}
+{"case_id":"a02","rejection":{"detail":"sintético","rule_id":"W1","subject":"c1-R3"},"run_index":1}
+{"case_id":"a02","rejection":{"detail":"sintético","rule_id":"W5","subject":"relations.2"},"run_index":1}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c1-R2"},"run_index":2}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c2-R1"},"run_index":2}
+{"case_id":"a01","rejection":{"detail":"sintético","rule_id":"W1","subject":"c0-A1"},"run_index":2}

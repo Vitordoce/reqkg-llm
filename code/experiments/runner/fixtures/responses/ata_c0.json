@@ -1,0 +1,36 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste do executor, não veio de modelo. Primeira chamada da ata sintética com chunks_per_call = 6 (chunks 0 a 5). A coordenadora e a calibração têm o mesmo nome normalizado que na entrevista, então o grafo liga os dois documentos. R1 não tem tipo e tem confiança baixa.",
+  "response": {
+    "requirements": [
+      {
+        "key": "R1",
+        "statement": "O sistema deve avisar quando a calibração de um equipamento vencer.",
+        "type": null,
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.55,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-3f2c4b799d53275b", "quote": "Aviso de calibração vencida"}
+        ]
+      }
+    ],
+    "actors": [
+      {"key": "A1", "name": "Coordenadora do laboratório", "kind": "stakeholder",
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-87cf60554babc0de", "quote": "coordenadora do laboratório"}]},
+      {"key": "A2", "name": "Responsável pela calibração", "kind": "stakeholder",
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-87cf60554babc0de", "quote": "responsável pela calibração"}]}
+    ],
+    "components": [],
+    "entities": [
+      {"key": "E1", "name": "calibração", "entity_type": "evento", "description": null,
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-3f2c4b799d53275b", "quote": "calibração vencida"}]}
+    ],
+    "relations": []
+  }
+}

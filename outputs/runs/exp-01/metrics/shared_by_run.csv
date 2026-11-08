@@ -1,0 +1,4 @@
+run_index,extraction_calls,extraction_input_tokens,extraction_output_tokens,promise_extraction_calls,promise_extraction_input_tokens,promise_extraction_output_tokens,classification_calls,classification_input_tokens,classification_output_tokens,calls_without_usage,rejections,rejections_by_rule
+0,12,38222,27164,0,0,0,0,0,0,0,5,W1=2;W2=2;W4=1
+1,12,38222,27164,0,0,0,0,0,0,0,5,W1=2;W2=2;W4=1
+2,12,38222,27164,0,0,0,0,0,0,0,5,W1=2;W2=2;W4=1

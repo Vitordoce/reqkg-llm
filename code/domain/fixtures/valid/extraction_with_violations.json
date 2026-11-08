@@ -1,0 +1,152 @@
+{
+  "actors": [],
+  "components": [],
+  "entities": [],
+  "relations": [
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-202c7f98847e276d",
+          "quote": "só a coordenação pode cancelar reserva de outra pessoa",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "source_key": "R1",
+      "target_key": "R4",
+      "type": "conflicts_with"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-202c7f98847e276d",
+          "quote": "só a coordenação pode cancelar reserva de outra pessoa",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "source_key": "R4",
+      "target_key": "R1",
+      "type": "duplicates"
+    },
+    {
+      "evidence": [],
+      "source_key": "R1",
+      "target_key": "R3",
+      "type": "depends_on"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-9e31855f3c8b8ca8",
+          "quote": "o sistema tem de impedir duas reservas no mesmo horário",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "source_key": "R3",
+      "target_key": "R1",
+      "type": "depends_on"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-f7faa2ea1130ac73",
+          "quote": "A consulta da agenda precisa ser rápida",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "source_key": "R2",
+      "target_key": "R2",
+      "type": "refines"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-202c7f98847e276d",
+          "quote": "Os dados de uso ficam guardados por dois anos para auditoria",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "source_key": "R5",
+      "target_key": "R1",
+      "type": "refines"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-9e31855f3c8b8ca8",
+          "quote": "o sistema tem de impedir duas reservas no mesmo horário",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "source_key": "R1",
+      "target_key": "R5",
+      "type": "refines"
+    }
+  ],
+  "requirements": [
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-9e31855f3c8b8ca8",
+          "quote": "o sistema tem de impedir duas reservas no mesmo horário",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "key": "R1",
+      "priority": "must",
+      "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+      "type": "functional",
+      "verification_method": "test"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-f7faa2ea1130ac73",
+          "quote": "a agenda abre em um segundo",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "key": "R2",
+      "statement": "A agenda deve ser rápida.",
+      "type": "non_functional"
+    },
+    {
+      "evidence": [],
+      "key": "R3",
+      "priority": "wont",
+      "statement": "O sistema deve ter login único.",
+      "type": "functional",
+      "verification_method": "test"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-321cae8960527a2d",
+          "quote": "só a coordenação",
+          "source_id": "src-3f478d516d9d807d"
+        },
+        {
+          "chunk_id": "chk-202c7f98847e276d",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "key": "R4",
+      "priority": "must",
+      "statement": "Cancelamento restrito à coordenação.",
+      "type": "functional",
+      "verification_method": "demonstration"
+    },
+    {
+      "evidence": [
+        {
+          "chunk_id": "chk-202c7f98847e276d",
+          "quote": "Os dados de uso ficam guardados por dois anos para auditoria",
+          "source_id": "src-3f478d516d9d807d"
+        }
+      ],
+      "key": "R5",
+      "priority": "should",
+      "statement": "O sistema deve reter os dados de uso por dois anos.",
+      "verification_method": "inspection"
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+  "$defs": {
+    "ActorCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/CitedEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "key": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,31}$",
+          "title": "Key",
+          "type": "string"
+        },
+        "kind": {
+          "$ref": "#/$defs/ActorKind"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "name",
+        "kind"
+      ],
+      "title": "ActorCandidate",
+      "type": "object"
+    },
+    "ActorKind": {
+      "enum": [
+        "stakeholder",
+        "external_system",
+        "user_role"
+      ],
+      "title": "ActorKind",
+      "type": "string"
+    },
+    "CitedEvidence": {
+      "additionalProperties": false,
+      "properties": {
+        "chunk_id": {
+          "minLength": 1,
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "quote": {
+          "anyOf": [
+            {
+              "maxLength": 1000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quote"
+        },
+        "source_id": {
+          "minLength": 1,
+          "title": "Source Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source_id",
+        "chunk_id"
+      ],
+      "title": "CitedEvidence",
+      "type": "object"
+    },
+    "ComponentCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/CitedEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "key": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,31}$",
+          "title": "Key",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "name"
+      ],
+      "title": "ComponentCandidate",
+      "type": "object"
+    },
+    "EntityCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Description"
+        },
+        "entity_type": {
+          "minLength": 1,
+          "title": "Entity Type",
+          "type": "string"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/CitedEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "key": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,31}$",
+          "title": "Key",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "key",
+        "name",
+        "entity_type"
+      ],
+      "title": "EntityCandidate",
+      "type": "object"
+    },
+    "Priority": {
+      "enum": [
+        "must",
+        "should",
+        "could",
+        "wont"
+      ],
+      "title": "Priority",
+      "type": "string"
+    },
+    "QualityCategory": {
+      "description": "Seis características da ISO/IEC 25010 fixadas no TG-1, com os nomes da edição de 2011.\n\nSecurity é proteção de informação e acesso. Safety, criada em 2023, não faz parte do conjunto.",
+      "enum": [
+        "performance",
+        "security",
+        "usability",
+        "reliability",
+        "maintainability",
+        "portability"
+      ],
+      "title": "QualityCategory",
+      "type": "string"
+    },
+    "RelationCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/CitedEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "origin": {
+          "default": "extracted_fact",
+          "enum": [
+            "extracted_fact",
+            "system_inference"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rationale"
+        },
+        "source_key": {
+          "minLength": 1,
+          "title": "Source Key",
+          "type": "string"
+        },
+        "target_key": {
+          "minLength": 1,
+          "title": "Target Key",
+          "type": "string"
+        },
+        "type": {
+          "$ref": "#/$defs/RelationType"
+        }
+      },
+      "required": [
+        "type",
+        "source_key",
+        "target_key"
+      ],
+      "title": "RelationCandidate",
+      "type": "object"
+    },
+    "RelationType": {
+      "enum": [
+        "depends_on",
+        "conflicts_with",
+        "refines",
+        "duplicates",
+        "requested_by",
+        "benefits_actor",
+        "derived_from",
+        "measured_by",
+        "allocated_to",
+        "mentions",
+        "related_to"
+      ],
+      "title": "RelationType",
+      "type": "string"
+    },
+    "RequirementCandidate": {
+      "additionalProperties": false,
+      "properties": {
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1.0,
+              "minimum": 0.0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/$defs/CitedEvidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "key": {
+          "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,31}$",
+          "title": "Key",
+          "type": "string"
+        },
+        "origin": {
+          "default": "extracted_fact",
+          "enum": [
+            "extracted_fact",
+            "system_inference"
+          ],
+          "title": "Origin",
+          "type": "string"
+        },
+        "priority": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Priority"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "quality_attributes": {
+          "items": {
+            "$ref": "#/$defs/QualityCategory"
+          },
+          "title": "Quality Attributes",
+          "type": "array"
+        },
+        "quantitative_value": {
+          "anyOf": [
+            {
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Quantitative Value"
+        },
+        "rationale": {
+          "anyOf": [
+            {
+              "maxLength": 500,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rationale"
+        },
+        "review_flags": {
+          "items": {
+            "$ref": "#/$defs/ReviewFlag"
+          },
+          "title": "Review Flags",
+          "type": "array"
+        },
+        "statement": {
+          "maxLength": 2000,
+          "minLength": 1,
+          "title": "Statement",
+          "type": "string"
+        },
+        "type": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/RequirementType"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        },
+        "verification_method": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/VerificationMethod"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "key",
+        "statement"
+      ],
+      "title": "RequirementCandidate",
+      "type": "object"
+    },
+    "RequirementType": {
+      "enum": [
+        "functional",
+        "non_functional",
+        "constraint"
+      ],
+      "title": "RequirementType",
+      "type": "string"
+    },
+    "ReviewFlag": {
+      "enum": [
+        "low_confidence",
+        "ambiguous_type",
+        "quantitative_value_pending"
+      ],
+      "title": "ReviewFlag",
+      "type": "string"
+    },
+    "VerificationMethod": {
+      "enum": [
+        "inspection",
+        "analysis",
+        "demonstration",
+        "test"
+      ],
+      "title": "VerificationMethod",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "actors": {
+      "items": {
+        "$ref": "#/$defs/ActorCandidate"
+      },
+      "title": "Actors",
+      "type": "array"
+    },
+    "components": {
+      "items": {
+        "$ref": "#/$defs/ComponentCandidate"
+      },
+      "title": "Components",
+      "type": "array"
+    },
+    "entities": {
+      "items": {
+        "$ref": "#/$defs/EntityCandidate"
+      },
+      "title": "Entities",
+      "type": "array"
+    },
+    "relations": {
+      "items": {
+        "$ref": "#/$defs/RelationCandidate"
+      },
+      "title": "Relations",
+      "type": "array"
+    },
+    "requirements": {
+      "items": {
+        "$ref": "#/$defs/RequirementCandidate"
+      },
+      "title": "Requirements",
+      "type": "array"
+    }
+  },
+  "title": "ExtractionOutput",
+  "type": "object"
+}

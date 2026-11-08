@@ -1,0 +1,93 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste, não veio de modelo. Extração da ata sintética numa chamada só. R1 tem evidência real e nenhum sinal de prioridade. R4 tem prioridade could sustentada pelo sinal 'seria útil', citado na evidência. R2 cita frase que não está no chunk (inventa prazo de dez segundos, prioridade e método). R3 cita um chunk_id que não existe no corpus. O JSON é válido: as regras P contam o problema e to_records recusa os dois com W1.",
+  "response": {
+    "requirements": [
+      {
+        "key": "R1",
+        "statement": "O painel de ensaios deve mostrar o estado de cada bancada.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.9,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "o painel de ensaios tem de mostrar o estado de cada bancada"}
+        ]
+      },
+      {
+        "key": "R2",
+        "statement": "O sistema deve exportar o relatório diário em PDF em até dez segundos.",
+        "type": "non_functional",
+        "priority": "must",
+        "verification_method": "test",
+        "quality_attributes": ["performance"],
+        "quantitative_value": "10 s",
+        "review_flags": [],
+        "confidence": 0.8,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "exportar o relatório diário em PDF em até dez segundos"}
+        ]
+      },
+      {
+        "key": "R3",
+        "statement": "Operadores não podem apagar registros de ensaio.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": ["security"],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.85,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-0123456789abcdef", "quote": "os registros de ensaio não podem ser apagados por operadores"}
+        ]
+      },
+      {
+        "key": "R4",
+        "statement": "O sistema deveria permitir exportar o relatório diário em PDF.",
+        "type": "functional",
+        "priority": "could",
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.8,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "A exportação do relatório diário em PDF seria útil"}
+        ]
+      }
+    ],
+    "actors": [
+      {"key": "A1", "name": "Gerente de operações", "kind": "stakeholder",
+       "evidence": [{"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "Gerente de operações"}]},
+      {"key": "A2", "name": "Analista de qualidade", "kind": "stakeholder",
+       "evidence": [{"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-62ddbef962a70c4c", "quote": "Analista de qualidade"}]}
+    ],
+    "components": [
+      {"key": "C1", "name": "painel de ensaios", "description": null,
+       "evidence": [{"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "o painel de ensaios"}]}
+    ],
+    "entities": [],
+    "relations": [
+      {"type": "requested_by", "source_key": "R1", "target_key": "A1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "o painel de ensaios tem de mostrar o estado de cada bancada"}]},
+      {"type": "allocated_to", "source_key": "R1", "target_key": "C1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "o painel de ensaios tem de mostrar o estado de cada bancada"}]},
+      {"type": "requested_by", "source_key": "R2", "target_key": "A1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-ad16ebe6059c9024", "quote": "exportar o relatório diário em PDF em até dez segundos"}]},
+      {"type": "requested_by", "source_key": "R3", "target_key": "A2", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-286b4a6d6899292d", "chunk_id": "chk-0123456789abcdef", "quote": "os registros de ensaio não podem ser apagados por operadores"}]}
+    ]
+  }
+}

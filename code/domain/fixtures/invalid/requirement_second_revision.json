@@ -1,0 +1,25 @@
+{
+  "previous_statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+  "priority": "must",
+  "provenance": {
+    "evidence": [
+      {
+        "chunk_id": "chk-9e31855f3c8b8ca8",
+        "quote": "o sistema tem de impedir duas reservas no mesmo horário",
+        "source_id": "src-3f478d516d9d807d"
+      }
+    ],
+    "note": null,
+    "origin": "extracted_fact",
+    "validation": "unvalidated"
+  },
+  "quality_attributes": [],
+  "quantitative_value": null,
+  "requirement_id": "req-9355e7e726822797",
+  "review_flags": [],
+  "revision": 2,
+  "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+  "status": "draft",
+  "type": "functional",
+  "verification_method": "test"
+}

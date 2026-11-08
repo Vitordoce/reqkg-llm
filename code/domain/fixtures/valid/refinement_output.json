@@ -1,0 +1,21 @@
+{
+  "revised": {
+    "evidence": [
+      {
+        "chunk_id": "chk-9e31855f3c8b8ca8",
+        "quote": "o sistema tem de impedir duas reservas no mesmo horário",
+        "source_id": "src-3f478d516d9d807d"
+      }
+    ],
+    "key": "R1",
+    "priority": "must",
+    "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+    "type": "functional",
+    "verification_method": "test"
+  },
+  "target_key": "R1",
+  "used_context_ids": [
+    "req-9355e7e726822797",
+    "chk-9e31855f3c8b8ca8"
+  ]
+}

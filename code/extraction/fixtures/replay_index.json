@@ -1,0 +1,62 @@
+{
+  "0cf2bab000152945a09a306feb6900ac665f8e750c37abd87eccd3ea865e6ed2": {
+    "file": "responses/classificacao_9001.json",
+    "prompt_name": "classification",
+    "prompt_version": 1,
+    "scenario": "classificacao_9001"
+  },
+  "15657279aafb87f5fd31063920c30b469253936970a56831ccd1526e69fd64b5": {
+    "file": "responses/refino_agenda_reqkg_inventado.json",
+    "prompt_name": "refinement",
+    "prompt_version": 2,
+    "scenario": "refino_agenda_reqkg_inventado"
+  },
+  "54e7bcb220b3959a8bd66c65f13506a305f7541ddf6e9e09339f79cbf98a6dc8": {
+    "file": "responses/refino_agenda_llm_only.json",
+    "prompt_name": "refinement",
+    "prompt_version": 2,
+    "scenario": "refino_agenda_llm_only"
+  },
+  "8b8736d728379128abe60f5dc8a3bb717906878e2b7ae2a364f90bdc4f79dec1": {
+    "file": "responses/extracao_entrevista_invalida.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "extracao_entrevista_invalida"
+  },
+  "93da95921c009969dbfa4c02f89fb5329aeccb472b5cd8e144e131f77f96d62f": {
+    "file": "responses/refino_classificacao_9002_reqkg.json",
+    "prompt_name": "classification_refinement",
+    "prompt_version": 1,
+    "scenario": "refino_classificacao_9002_reqkg"
+  },
+  "a4b13204cc22604a0f9e321ec98f25770877bfa26a29f888c1c247dbdfde4a08": {
+    "file": "responses/extracao_ata_inventada.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "extracao_ata_inventada"
+  },
+  "b6abd3dc80858ae244cfb9158af8a96ddddd4311a04b6b5a15dc42e240f93ab0": {
+    "file": "responses/extracao_entrevista_c0.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "extracao_entrevista_c0"
+  },
+  "caf6d18712a12398d085f94d51517b29d10c081c4e17b29593673febb0254eaa": {
+    "file": "responses/extracao_entrevista_c1.json",
+    "prompt_name": "extraction",
+    "prompt_version": 2,
+    "scenario": "extracao_entrevista_c1"
+  },
+  "e3a46b66f9a0bf026d4c1e4fc311e492823805c473b1f4aace04e1af4c43acb5": {
+    "file": "responses/refino_classificacao_9002_llm_only.json",
+    "prompt_name": "classification_refinement",
+    "prompt_version": 1,
+    "scenario": "refino_classificacao_9002_llm_only"
+  },
+  "e7fb617aaa60d3b5782dec21d7f3fb46ce9062f5ca8f87e158108b367ba90deb": {
+    "file": "responses/classificacao_9002.json",
+    "prompt_name": "classification",
+    "prompt_version": 1,
+    "scenario": "classificacao_9002"
+  }
+}

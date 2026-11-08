@@ -1,0 +1,107 @@
+{
+  "$defs": {
+    "ContextItem": {
+      "additionalProperties": false,
+      "properties": {
+        "chunk_id": {
+          "pattern": "^chk-[0-9a-f]{16}$",
+          "title": "Chunk Id",
+          "type": "string"
+        },
+        "item_id": {
+          "minLength": 1,
+          "title": "Item Id",
+          "type": "string"
+        },
+        "kind": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/NodeKind"
+            },
+            {
+              "const": "relation",
+              "type": "string"
+            }
+          ],
+          "title": "Kind"
+        },
+        "rank": {
+          "minimum": 0,
+          "title": "Rank",
+          "type": "integer"
+        },
+        "source_id": {
+          "pattern": "^src-[0-9a-f]{16}$",
+          "title": "Source Id",
+          "type": "string"
+        },
+        "text": {
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "item_id",
+        "kind",
+        "rank",
+        "text",
+        "source_id",
+        "chunk_id"
+      ],
+      "title": "ContextItem",
+      "type": "object"
+    },
+    "ContextStrategy": {
+      "enum": [
+        "source_chunks",
+        "graph_local"
+      ],
+      "title": "ContextStrategy",
+      "type": "string"
+    },
+    "NodeKind": {
+      "enum": [
+        "requirement",
+        "actor",
+        "source_document",
+        "source_chunk",
+        "quality_attribute",
+        "software_component",
+        "entity"
+      ],
+      "title": "NodeKind",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "items": {
+      "items": {
+        "$ref": "#/$defs/ContextItem"
+      },
+      "title": "Items",
+      "type": "array"
+    },
+    "limit": {
+      "minimum": 1,
+      "title": "Limit",
+      "type": "integer"
+    },
+    "query": {
+      "minLength": 1,
+      "title": "Query",
+      "type": "string"
+    },
+    "strategy": {
+      "$ref": "#/$defs/ContextStrategy"
+    }
+  },
+  "required": [
+    "query",
+    "strategy",
+    "limit"
+  ],
+  "title": "RetrievedContext",
+  "type": "object"
+}

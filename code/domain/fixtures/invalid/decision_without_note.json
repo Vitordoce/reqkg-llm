@@ -1,0 +1,17 @@
+{
+  "priority": "must",
+  "provenance": {
+    "evidence": [],
+    "note": null,
+    "origin": "researcher_decision",
+    "validation": "unvalidated"
+  },
+  "quality_attributes": [],
+  "quantitative_value": null,
+  "requirement_id": "req-9355e7e726822797",
+  "review_flags": [],
+  "statement": "O sistema deve impedir duas reservas do mesmo equipamento no mesmo horário.",
+  "status": "draft",
+  "type": "functional",
+  "verification_method": "test"
+}

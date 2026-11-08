@@ -1,0 +1,9 @@
+{"synthetic":true,"promise_id":"PROMISE-NFR-9001","project_id":98,"text":"The system shall allow a technician to book an instrument for a time slot.","label":"F","label_name":"Functional","is_functional":true}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9002","project_id":98,"text":"The system shall send a reminder e-mail to the technician one day before each booking.","label":"F","label_name":"Functional","is_functional":true}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9003","project_id":98,"text":"The booking calendar shall load in under two seconds on the laboratory network.","label":"PE","label_name":"Performance","is_functional":false}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9004","project_id":98,"text":"Only the laboratory coordinator shall cancel a booking made by another technician.","label":"SE","label_name":"Security","is_functional":false}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9005","project_id":98,"text":"The system shall record every cancellation in an audit log kept for two years.","label":"L","label_name":"Legal","is_functional":false}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9006","project_id":98,"text":"The audit log shall be readable only by the laboratory coordinator.","label":"SE","label_name":"Security","is_functional":false}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9007","project_id":98,"text":"The instrument list shall follow the visual identity guide of the institute.","label":"LF","label_name":"Look and feel","is_functional":false}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9008","project_id":98,"text":"The system shall warn the person in charge when an instrument calibration expires.","label":"F","label_name":"Functional","is_functional":true}
+{"synthetic":true,"promise_id":"PROMISE-NFR-9101","project_id":97,"text":"The system shall export the monthly usage report as a spreadsheet.","label":"F","label_name":"Functional","is_functional":true}

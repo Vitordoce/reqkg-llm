@@ -1,0 +1,64 @@
+# Fixture de teste do validador. Não é a amostra de referência.
+protocol_version = "1"
+
+[[artifact]]
+id = "a01"
+kind = "interview"
+title = "Entrevista de teste"
+
+[[artifact]]
+id = "a02"
+kind = "meeting_record"
+title = "Ata de teste"
+
+[[requirement]]
+id = "a01-R01"
+artifact = "a01"
+statement = "O sistema deve registrar cada retirada de ferramenta com o nome de quem retirou."
+type = "functional"
+quote = "cada ferramenta retirada precisa ficar registrada com o nome de quem retirou"
+priority = "must"
+priority_quote = "Sem isso não tem sistema."
+
+[[requirement]]
+id = "a01-R02"
+artifact = "a01"
+statement = "O aplicativo deve ser simples de usar no celular."
+type = "non_functional"
+quote = "o aplicativo tem de ser simples de usar no celular"
+quality_attributes = ["usability"]
+
+[[requirement]]
+id = "a01-R03"
+artifact = "a01"
+statement = "O sistema deve lembrar quem está com uma ferramenta há mais de uma semana."
+type = "functional"
+quote = "mandar um lembrete quando a ferramenta passar de uma semana fora"
+priority = "could"
+priority_quote = "Seria bom também"
+
+[[requirement]]
+id = "a02-R01"
+artifact = "a02"
+statement = "O sistema deve enviar lembrete por mensagem."
+type = "functional"
+quote = "o lembrete por mensagem"
+priority = "wont"
+priority_quote = "fica para a segunda versão"
+
+[[requirement]]
+id = "a02-R02"
+artifact = "a02"
+statement = "Os registros de retirada devem ser guardados por um ano."
+type = "constraint"
+quote = """
+Os registros devem ser
+guardados por um ano."""
+verification_method = "inspection"
+verification_quote = "O auditor da escola vai conferir o relatório de retiradas"
+
+[[relation]]
+type = "depends_on"
+source = "a02-R01"
+target = "a01-R01"
+quote = "O lembrete depende do registro de retirada"

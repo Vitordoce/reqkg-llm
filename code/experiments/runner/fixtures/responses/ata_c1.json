@@ -1,0 +1,75 @@
+{
+  "synthetic": true,
+  "note": "Resposta escrita à mão para teste do executor, não veio de modelo. Segunda chamada da ata sintética com chunks_per_call = 6 (chunks 6 a 10). R3 vem de uma dúvida sem decisão e tem confiança baixa.",
+  "response": {
+    "requirements": [
+      {
+        "key": "R1",
+        "statement": "O sistema deve recusar a segunda reserva do mesmo equipamento no mesmo horário e mostrar quem já reservou.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.85,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-c5b123cf9e21984a", "quote": "recuse a segunda reserva e mostre quem já reservou"}
+        ]
+      },
+      {
+        "key": "R2",
+        "statement": "O sistema deve exibir o aviso de vencimento da calibração no próprio sistema, no mesmo dia do vencimento.",
+        "type": "functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": [],
+        "quantitative_value": null,
+        "review_flags": [],
+        "confidence": 0.8,
+        "rationale": null,
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-e317d2f30be53bb4", "quote": "Ele quer o aviso no próprio sistema, no mesmo dia do vencimento"}
+        ]
+      },
+      {
+        "key": "R3",
+        "statement": "A agenda deve funcionar no celular.",
+        "type": "non_functional",
+        "priority": null,
+        "verification_method": null,
+        "quality_attributes": ["portability"],
+        "quantitative_value": null,
+        "review_flags": ["low_confidence"],
+        "confidence": 0.4,
+        "rationale": "A ata registra a questão como dúvida, sem decisão.",
+        "origin": "extracted_fact",
+        "evidence": [
+          {"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-33ff87b7b52d787a", "quote": "se a agenda vai funcionar no celular"}
+        ]
+      }
+    ],
+    "actors": [
+      {"key": "A1", "name": "Coordenadora do laboratório", "kind": "stakeholder",
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-c5b123cf9e21984a", "quote": "A coordenadora"}]},
+      {"key": "A2", "name": "Responsável pela calibração", "kind": "stakeholder",
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-e317d2f30be53bb4", "quote": "O responsável pela calibração"}]}
+    ],
+    "components": [],
+    "entities": [
+      {"key": "E1", "name": "calibração", "entity_type": "evento", "description": null,
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-e317d2f30be53bb4", "quote": "calibração"}]},
+      {"key": "E2", "name": "reserva", "entity_type": "conceito", "description": null,
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-c5b123cf9e21984a", "quote": "segunda reserva"}]}
+    ],
+    "relations": [
+      {"type": "requested_by", "source_key": "R1", "target_key": "A1", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-c5b123cf9e21984a", "quote": "Ela pediu que o sistema novo recuse a segunda reserva"}]},
+      {"type": "requested_by", "source_key": "R2", "target_key": "A2", "origin": "extracted_fact", "rationale": null,
+       "evidence": [{"source_id": "src-339ed9b9a545ccbc", "chunk_id": "chk-e317d2f30be53bb4", "quote": "Ele quer o aviso no próprio sistema"}]}
+    ]
+  }
+}
